@@ -11,7 +11,7 @@ import android.widget.ListView;
 public class MyChooseActivity extends AppCompatActivity {
     Context contex;
     String element1 = "Animation";
-    String element2 = "Element 2";
+    String element2 = "Equation";
     String element3 = "Element 3";
 
     @Override
@@ -26,14 +26,18 @@ public class MyChooseActivity extends AppCompatActivity {
         optionList.setAdapter(optionAdapter);
 
         optionList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            contex = getApplicationContext();
+
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                contex = getApplicationContext();
                 if (items[i] == element1) {
                     Intent intent = new Intent(contex, AnimationActivity.class);
                     startActivity(intent);
+                }else if (items[i] == element2) {
+                    Intent intent = new Intent(contex, EquationActivity.class);
+                    startActivity(intent);
                 }
+
             }
         });
     }

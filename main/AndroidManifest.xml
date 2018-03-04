@@ -16,7 +16,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MyChooseActivity" />
-        <activity android:name=".AnimationActivity"></activity>
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".ResultsActivity" />
+        <activity android:name=".SwipeActivity" />
+        <activity android:name=".CheeseActivity" />
+        <activity android:name=".ExampleActivity" />
+        <activity android:name=".EquationActivity"></activity>
     </application>
 
 </manifest>

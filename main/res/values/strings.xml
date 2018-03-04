@@ -2,4 +2,7 @@
     <string name="app_name">My Application to Testing</string>
     <string name="welcoming">Welcome in my testing application!</string>
     <string name="przycisk">Naciśnij, aby przejść dalej.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
