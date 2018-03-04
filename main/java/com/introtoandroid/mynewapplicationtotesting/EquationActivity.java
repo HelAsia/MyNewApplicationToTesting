@@ -112,5 +112,21 @@ public class EquationActivity extends AppCompatActivity {
                 tvDivideResult.setText(numberOneString + " / " + numberTwoString + " = " + counter.getDivideResult());
             }
         });
+
+        button = (Button) findViewById(R.id.deleteButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                tvAddResult = (TextView) findViewById(R.id.addTextView);
+                tvSubtractResult = (TextView) findViewById(R.id.subtractTextView);
+                tvMultiplyResult = (TextView) findViewById(R.id.multiplyTextView);
+                tvDivideResult = (TextView) findViewById(R.id.divideTextView);
+                tvAddResult.setText(" ");
+                tvSubtractResult.setText(" ");
+                tvMultiplyResult.setText(" ");
+                tvDivideResult.setText(" ");
+            }
+        });
     }
 }
