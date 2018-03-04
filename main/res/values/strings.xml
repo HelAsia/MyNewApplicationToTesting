@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application to Testing</string>
+    <string name="welcoming">Welcome in my testing application!</string>
+    <string name="przycisk">Naciśnij, aby przejść dalej.</string>
+</resources>
