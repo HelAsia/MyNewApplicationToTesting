@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.lang.reflect.Method;
+
 public class EquationActivity extends AppCompatActivity {
     Button button;
     Context context;
@@ -15,6 +17,10 @@ public class EquationActivity extends AppCompatActivity {
     TextView tvSubtractResult;
     TextView tvMultiplyResult;
     TextView tvDivideResult;
+    String add = " + ";
+    String subtract = " - ";
+    String multiply = " * ";
+    String divide = " / ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,17 +51,14 @@ public class EquationActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                TextView numberOneText = (TextView) findViewById(R.id.etNumberOne);
-                String numberOneString = numberOneText.getText().toString();
-
-                TextView numberTwoText = (TextView) findViewById(R.id.etNumberTwo);
-                String numberTwoString = numberTwoText.getText().toString();
-
-                Counter counter = new Counter(numberOneString,numberTwoString);
+                String numberOne = getNumberOne();
+                String numberTwo = getNumberTwo();
 
                 tvAddResult = (TextView) findViewById(R.id.addTextView);
-                tvAddResult.setText(numberOneString + " + " + numberTwoString + " = " + counter.getAddResult());
+                Counter counter = new Counter(numberOne,numberTwo);
+                String ResultCounter = counter.getAddResult();
+
+                checkEmptyString(numberOne,numberTwo, tvAddResult, add, ResultCounter);
             }
         });
 
@@ -63,17 +66,14 @@ public class EquationActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                TextView numberOneText = (TextView) findViewById(R.id.etNumberOne);
-                String numberOneString = numberOneText.getText().toString();
-
-                TextView numberTwoText = (TextView) findViewById(R.id.etNumberTwo);
-                String numberTwoString = numberTwoText.getText().toString();
-
-                Counter counter = new Counter(numberOneString,numberTwoString);
+                String numberOne = getNumberOne();
+                String numberTwo = getNumberTwo();
 
                 tvSubtractResult = (TextView) findViewById(R.id.subtractTextView);
-                tvSubtractResult.setText(numberOneString + " - " + numberTwoString + " = " + counter.getSubtractResult());
+                Counter counter = new Counter(numberOne,numberTwo);
+                String ResultCounter = counter.getSubtractResult();
+
+                checkEmptyString(numberOne,numberTwo, tvSubtractResult, subtract, ResultCounter);
             }
         });
 
@@ -81,17 +81,14 @@ public class EquationActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                TextView numberOneText = (TextView) findViewById(R.id.etNumberOne);
-                String numberOneString = numberOneText.getText().toString();
-
-                TextView numberTwoText = (TextView) findViewById(R.id.etNumberTwo);
-                String numberTwoString = numberTwoText.getText().toString();
-
-                Counter counter = new Counter(numberOneString,numberTwoString);
+                String numberOne = getNumberOne();
+                String numberTwo = getNumberTwo();
 
                 tvMultiplyResult = (TextView) findViewById(R.id.multiplyTextView);
-                tvMultiplyResult.setText(numberOneString + " * " + numberTwoString + " = " + counter.getMultiplyResult());
+                Counter counter = new Counter(numberOne,numberTwo);
+                String ResultCounter = counter.getMultiplyResult();
+
+                checkEmptyString(numberOne,numberTwo, tvMultiplyResult, multiply, ResultCounter);
             }
         });
 
@@ -99,17 +96,14 @@ public class EquationActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                TextView numberOneText = (TextView) findViewById(R.id.etNumberOne);
-                String numberOneString = numberOneText.getText().toString();
-
-                TextView numberTwoText = (TextView) findViewById(R.id.etNumberTwo);
-                String numberTwoString = numberTwoText.getText().toString();
-
-                Counter counter = new Counter(numberOneString,numberTwoString);
+                String numberOne = getNumberOne();
+                String numberTwo = getNumberTwo();
 
                 tvDivideResult = (TextView) findViewById(R.id.divideTextView);
-                tvDivideResult.setText(numberOneString + " / " + numberTwoString + " = " + counter.getDivideResult());
+                Counter counter = new Counter(numberOne,numberTwo);
+                String ResultCounter = counter.getDivideResult();
+
+                checkEmptyString(numberOne,numberTwo, tvDivideResult, divide, ResultCounter);
             }
         });
 
@@ -129,4 +123,24 @@ public class EquationActivity extends AppCompatActivity {
             }
         });
     }
+        public void checkEmptyString (String numberOneString, String numberTwoString, TextView result, String operator, String getResult){
+            if (numberOneString.equals("") || numberTwoString.equals("")) {
+                result.setText("You have to enter number and click again");
+            }else {
+                result.setText(numberOneString + operator + numberTwoString + " = " + getResult);
+            }
+        }
+
+        public String getNumberOne (){
+            TextView numberOneText = (TextView) findViewById(R.id.etNumberOne);
+            String numberOneString = numberOneText.getText().toString();
+            return numberOneString;
+        }
+
+        public String getNumberTwo (){
+            TextView numberTwoText = (TextView) findViewById(R.id.etNumberTwo);
+            String numberTwoString = numberTwoText.getText().toString();
+            return numberTwoString;
+        }
+
 }

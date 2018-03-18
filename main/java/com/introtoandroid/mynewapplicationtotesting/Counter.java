@@ -17,6 +17,9 @@ public class Counter {
     int divideResultsInt;
 
     public Counter(String numberOne, String numberTwo){
+        if(numberOne.equals("") || numberTwo.equals("")){
+
+        }
         this.numberOneInt = Integer.parseInt(numberOne);
         this.numberTwoInt = Integer.parseInt(numberTwo);
 
@@ -51,6 +54,7 @@ public class Counter {
     }
 
     public String getAddResult() {
+
         return addResultsString;
     }
 
@@ -63,6 +67,7 @@ public class Counter {
     }
 
     public String getDivideResult() {
+
         return divideResultsString;
     }
 }

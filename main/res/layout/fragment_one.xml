@@ -1,13 +1,37 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.introtoandroid.mynewapplicationtotesting.FragmentOne">
+    android:orientation="vertical"
+    android:background="#00ffff">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup1">
 
-</FrameLayout>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:id="@+id/button_fragment2"
+            android:text="Czerwony"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:id="@+id/button_fragment3"
+            android:text="Zielony"
+            android:layout_weight="2"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:id="@+id/button_fragment4"
+            android:text="Żółty"
+            android:layout_weight="3"/>
+    </RadioGroup>
+
+</LinearLayout>

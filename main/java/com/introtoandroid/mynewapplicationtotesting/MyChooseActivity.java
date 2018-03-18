@@ -12,7 +12,8 @@ public class MyChooseActivity extends AppCompatActivity {
     Context contex;
     String element1 = "Animation";
     String element2 = "Equation";
-    String element3 = "Element 3";
+    String element3 = "Fragments";
+    String element4 = "FragmentSwipe";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,7 @@ public class MyChooseActivity extends AppCompatActivity {
         ListView optionList = new ListView(this);
         setContentView(optionList);
 
-        final String[] items = {element1, element2, element3};
+        final String[] items = {element1, element2, element3, element4};
         ArrayAdapter<String> optionAdapter = new ArrayAdapter<String>(this, R.layout.activity_my_choose, R.id.option_name, items);
 
         optionList.setAdapter(optionAdapter);
@@ -36,7 +37,14 @@ public class MyChooseActivity extends AppCompatActivity {
                 }else if (items[i] == element2) {
                     Intent intent = new Intent(contex, EquationActivity.class);
                     startActivity(intent);
+                }else if (items[i] == element3) {
+                    Intent intent = new Intent(contex, FragmentActivity.class);
+                    startActivity(intent);
+                }else if (items[i] == element4) {
+                    Intent intent = new Intent(contex, SwipeActivity.class);
+                    startActivity(intent);
                 }
+
 
             }
         });
