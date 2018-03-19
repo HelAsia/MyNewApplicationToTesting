@@ -22,7 +22,8 @@
         <activity android:name=".SwipeActivity" />
         <activity android:name=".CheeseActivity" />
         <activity android:name=".ExampleActivity" />
-        <activity android:name=".EquationActivity"></activity>
+        <activity android:name=".EquationActivity" />
+        <activity android:name=".ButtonsActivity"></activity>
     </application>
 
 </manifest>
