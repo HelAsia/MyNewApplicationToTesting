@@ -10,4 +10,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.introtoandroid.mynewapplicationtotesting.ExampleActivity">
 
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.introtoandroid.mynewapplicationtotesting.ToolbarFragment"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fragment" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.introtoandroid.mynewapplicationtotesting.TextFragment"
+        android:layout_below="@+id/fragment"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_fragment" />
+
 </RelativeLayout>

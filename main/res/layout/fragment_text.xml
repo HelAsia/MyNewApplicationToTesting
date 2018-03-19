@@ -4,10 +4,14 @@
     android:layout_height="match_parent"
     tools:context="com.introtoandroid.mynewapplicationtotesting.TextFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Fragment Two"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
 
 </FrameLayout>
