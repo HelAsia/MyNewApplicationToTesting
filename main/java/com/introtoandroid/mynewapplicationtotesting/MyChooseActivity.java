@@ -48,11 +48,10 @@ public class MyChooseActivity extends AppCompatActivity {
                 }else if (items[i] == element5) {
                     Intent intent = new Intent(contex, ExampleActivity.class);
                     startActivity(intent);
+                }else if (items[i] == element6) {
+                    Intent intent = new Intent(contex, ButtonsActivity.class);
+                    startActivity(intent);
                 }
-                //else if (items[i] == element6) {
-                  //  Intent intent = new Intent(contex, ButtonsActivity.class);
-                 //   startActivity(intent);
-               // }
             }
         });
     }
