@@ -54,11 +54,12 @@ public class CollectionActivity extends AppCompatActivity {
         Set<String> set = new HashSet();
         for (int i = 0; i < namesList.size(); i++){
             boolean nameSet = set.add(namesList.get(i));
-            if (nameSet == false){
+            if (nameSet == true){
                 numberOfnoDuplicateNameSum = numberOfnoDuplicateNameI;
             }else {
                 numberOfnoDuplicateNameSum = numberOfnoDuplicateNameI + 1;
             }
+
         }
         final String numberOfnoDuplicateNameS = Integer.toString(numberOfnoDuplicateNameSum);
 
@@ -68,9 +69,7 @@ public class CollectionActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 listPrint.setText("You number of no duplicate names is: " + numberOfnoDuplicateNameS);
-
             }
         });
-
     }
 }
