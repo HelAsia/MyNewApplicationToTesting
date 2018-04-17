@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,7 +18,6 @@ import android.widget.Toast;
 
 public class CollectionFragment extends Fragment  {
     Context context;
-    CollectionActivity collectionActivity = new CollectionActivity();
 
     public CollectionFragment() {
         // Required empty public constructor
@@ -27,13 +27,14 @@ public class CollectionFragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         context = getActivity();
+        ArrayList <String> myList = this.getArguments().getStringArrayList("list");
         // Inflate the layout for this fragment
 
-
-        ListView optionList2 = new ListView(context);
-        if (collectionActivity.list != null){
-            ArrayAdapter<String> optionAdapter = new ArrayAdapter<String>(context, R.layout.activity_collection, R.id.textViewTest, collectionActivity.list);
-            optionList2.setAdapter(optionAdapter);
+        ListView optionList = new ListView(context);
+        if (myList != null){
+            Toast.makeText(context,"List is not empty",Toast.LENGTH_SHORT).show();
+            ArrayAdapter<String> optionAdapter = new ArrayAdapter<String>(context, R.layout.fragment_collection, R.id.textViewTest, myList);
+            optionList.setAdapter(optionAdapter);
 
         }else {
             Toast.makeText(context,"List is empty",Toast.LENGTH_SHORT).show();

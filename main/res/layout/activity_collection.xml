@@ -19,18 +19,6 @@
         android:layout_alignParentStart="true"
         android:id="@+id/tvnames" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:layout_below="@+id/tvnames"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="28dp"
-        android:id="@+id/nameTV" />
-
     <Button
         android:text="Add to list"
         android:layout_width="wrap_content"
@@ -63,16 +51,6 @@
         android:layout_marginEnd="10dp" />
 
     <Button
-        android:text="COUNT DUPLICATE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_count"
-        android:layout_above="@+id/name_remove_button"
-        android:layout_alignRight="@+id/buttonShowList"
-        android:layout_alignEnd="@+id/buttonShowList"
-        android:layout_marginBottom="8dp" />
-
-    <Button
         android:text="Delete from list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,15 +59,24 @@
         android:layout_alignBottom="@+id/name_add_button"
         android:layout_centerHorizontal="true" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/nameTV"
+        android:layout_below="@+id/tvnames"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragment_layout"
-        android:layout_toRightOf="@+id/list_tv"
-        android:layout_toEndOf="@+id/list_tv"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_below="@+id/list_tv">
+        android:layout_below="@+id/list_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
 
     </FrameLayout>
 
@@ -98,8 +85,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textViewList"
-        android:layout_below="@+id/buttonShowList"
-        android:layout_alignLeft="@+id/fragment_layout"
-        android:layout_alignStart="@+id/fragment_layout" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_above="@+id/fragment_layout"
+        android:layout_toRightOf="@+id/list_tv"
+        android:layout_toEndOf="@+id/list_tv" />
+
+    <Button
+        android:text="COUNT DUPLICATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_count"
+        android:layout_above="@+id/name_remove_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
