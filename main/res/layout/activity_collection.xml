@@ -41,6 +41,37 @@
         android:layout_marginTop="40dp"
         android:id="@+id/name_add_button" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_add_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/list_tv" />
+
+    <Button
+        android:text="SHOW LIST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonShowList"
+        android:layout_alignBaseline="@+id/name_remove_button"
+        android:layout_alignBottom="@+id/name_remove_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:text="COUNT DUPLICATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_count"
+        android:layout_above="@+id/name_remove_button"
+        android:layout_alignRight="@+id/buttonShowList"
+        android:layout_alignEnd="@+id/buttonShowList"
+        android:layout_marginBottom="8dp" />
+
     <Button
         android:text="Delete from list"
         android:layout_width="wrap_content"
@@ -50,23 +81,25 @@
         android:layout_alignBottom="@+id/name_add_button"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="SHOW LIST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/name_remove_button"
-        android:layout_toRightOf="@+id/name_remove_button"
-        android:layout_toEndOf="@+id/name_remove_button"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:id="@+id/button_show_list" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_layout"
+        android:layout_toRightOf="@+id/list_tv"
+        android:layout_toEndOf="@+id/list_tv"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/list_tv">
+
+    </FrameLayout>
 
     <TextView
+        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name_add_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="11dp"
-        android:id="@+id/list_tv" />
+        android:id="@+id/textViewList"
+        android:layout_below="@+id/buttonShowList"
+        android:layout_alignLeft="@+id/fragment_layout"
+        android:layout_alignStart="@+id/fragment_layout" />
+
 </RelativeLayout>
