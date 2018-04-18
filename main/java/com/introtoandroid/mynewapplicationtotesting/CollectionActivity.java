@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class CollectionActivity extends AppCompatActivity {
@@ -74,11 +73,11 @@ public class CollectionActivity extends AppCompatActivity {
                 for (int i = 0; i < namesList.size(); i++){
                     boolean nameSet = set.add(namesList.get(i));
                     if (nameSet == true){
-                        numberOfNoDuplicateNameSum = numberOfNoDuplicateNameI + 1;
+                        numberOfNoDuplicateNameI = numberDuplicateGetter(numberOfNoDuplicateNameSum +1);
                     }else {
-                        numberOfNoDuplicateNameSum = numberOfNoDuplicateNameI;
+                        numberOfNoDuplicateNameI = numberDuplicateGetter(numberOfNoDuplicateNameSum);
                     }
-                    numberOfNoDuplicateNameI = numberDuplicateGetter(numberOfNoDuplicateNameI);
+                    numberOfNoDuplicateNameSum = numberDuplicateGetter(numberOfNoDuplicateNameI);
                 }
 
                 countPrint.setText("You number of no duplicate names is: " + numberOfNoDuplicateNameSum);

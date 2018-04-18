@@ -26,11 +26,14 @@ public class CollectionFragment extends Fragment  {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View rootView = inflater.inflate(R.layout.fragment_collection, container,false);
         context = getActivity();
         ArrayList <String> myList = this.getArguments().getStringArrayList("list");
+
         // Inflate the layout for this fragment
 
-        ListView optionList = new ListView(context);
+        ListView optionList = (ListView) rootView.findViewById(R.id.listViewFragment);
         if (myList != null){
             Toast.makeText(context,"List is not empty",Toast.LENGTH_SHORT).show();
             ArrayAdapter<String> optionAdapter = new ArrayAdapter<String>(context, R.layout.fragment_collection, R.id.textViewTest, myList);
@@ -40,6 +43,6 @@ public class CollectionFragment extends Fragment  {
             Toast.makeText(context,"List is empty",Toast.LENGTH_SHORT).show();
         }
 
-        return inflater.inflate(R.layout.fragment_collection, container, false);
+        return rootView;
     }
 }
