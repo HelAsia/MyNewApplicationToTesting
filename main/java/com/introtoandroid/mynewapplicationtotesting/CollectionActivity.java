@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class CollectionActivity extends AppCompatActivity {
@@ -21,7 +22,6 @@ public class CollectionActivity extends AppCompatActivity {
     int numberOfNoDuplicateNameI = 0;
     int numberOfNoDuplicateNameSum = 0;
     final ArrayList <String> namesList = new ArrayList<>();
-   // List <String> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class CollectionActivity extends AppCompatActivity {
                     }else{
                         Toast.makeText(context,"0",Toast.LENGTH_SHORT).show();
                     }
-                  }
+                }
             }
         });
 
@@ -69,19 +69,8 @@ public class CollectionActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Set<String> set = new HashSet();
-                for (int i = 0; i < namesList.size(); i++){
-                    boolean nameSet = set.add(namesList.get(i));
-                    if (nameSet == true){
-                        numberOfNoDuplicateNameI = numberDuplicateGetter(numberOfNoDuplicateNameSum +1);
-                    }else {
-                        numberOfNoDuplicateNameI = numberDuplicateGetter(numberOfNoDuplicateNameSum);
-                    }
-                    numberOfNoDuplicateNameSum = numberDuplicateGetter(numberOfNoDuplicateNameI);
-                }
-
-                countPrint.setText("You number of no duplicate names is: " + numberOfNoDuplicateNameSum);
-
+                countPrint.setText("You number of no duplicate names is: " + numberOfNoDuplicateNameGetter(namesList));
+                numberOfNoDuplicateNameSum = 0;
             }
         });
 
@@ -109,5 +98,19 @@ public class CollectionActivity extends AppCompatActivity {
         fragment.setArguments(args);
         fragmentTransaction.replace(R.id.fragment_layout, fragment);
         fragmentTransaction.commit();
+    }
+
+    public int numberOfNoDuplicateNameGetter (List<String> nameList){
+        Set<String> set = new HashSet();
+        for (int i = 0; i < namesList.size(); i++){
+            boolean nameSet = set.add(namesList.get(i));
+            if (nameSet == true){
+                numberOfNoDuplicateNameI = numberDuplicateGetter(numberOfNoDuplicateNameSum);
+            }else {
+                numberOfNoDuplicateNameI = numberDuplicateGetter(numberOfNoDuplicateNameSum + 1);
+            }
+            numberOfNoDuplicateNameSum = numberDuplicateGetter(numberOfNoDuplicateNameI);
+        }
+        return numberOfNoDuplicateNameSum;
     }
 }
