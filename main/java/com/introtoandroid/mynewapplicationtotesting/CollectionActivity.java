@@ -10,7 +10,6 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.Fragment;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -100,7 +99,7 @@ public class CollectionActivity extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
-    public int numberOfNoDuplicateNameGetter (List<String> nameList){
+    public int numberOfNoDuplicateNameGetter (List<String> namesList){
         Set<String> set = new HashSet();
         for (int i = 0; i < namesList.size(); i++){
             boolean nameSet = set.add(namesList.get(i));
