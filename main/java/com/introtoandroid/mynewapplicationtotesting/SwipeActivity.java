@@ -19,7 +19,6 @@ public class SwipeActivity extends AppCompatActivity {
         vpPager.setAdapter(adapterViewPager);
     }
 
-
     public static class MyPagerAdapter extends FragmentPagerAdapter {
         private static int NUM_ITEMS = 3;
 

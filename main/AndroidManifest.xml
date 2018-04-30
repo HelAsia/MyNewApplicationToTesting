@@ -24,6 +24,7 @@
         <activity android:name=".ExampleActivity" />
         <activity android:name=".EquationActivity" />
         <activity android:name=".ButtonsActivity" />
+
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -37,7 +38,7 @@
         <activity android:name=".DateTimeActivity" />
         <activity android:name=".CollectionActivity" />
         <activity android:name=".DynamicFragmActivity" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DetailActivity" />
     </application>
 
 </manifest>
