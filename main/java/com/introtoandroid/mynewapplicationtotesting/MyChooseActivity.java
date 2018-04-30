@@ -17,6 +17,7 @@ public class MyChooseActivity extends AppCompatActivity {
     String element5 = "FragmentTooldbar";
     String element6 = "Buttons";
     String element7 = "Collections";
+    String element8 = "DynamicFragments";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,7 @@ public class MyChooseActivity extends AppCompatActivity {
         ListView optionList = new ListView(this);
         setContentView(optionList);
 
-        final String[] items = {element1, element2, element3, element4, element5, element6, element7};
+        final String[] items = {element1, element2, element3, element4, element5, element6, element7, element8};
         ArrayAdapter<String> optionAdapter = new ArrayAdapter<String>(this, R.layout.activity_my_choose, R.id.option_name, items);
 
         optionList.setAdapter(optionAdapter);
@@ -54,6 +55,9 @@ public class MyChooseActivity extends AppCompatActivity {
                     startActivity(intent);
                 }else if (items[i] == element7) {
                     Intent intent = new Intent(contex, CollectionActivity.class);
+                    startActivity(intent);
+                }else if (items[i] == element8) {
+                    Intent intent = new Intent(contex, DynamicFragmActivity.class);
                     startActivity(intent);
                 }
             }

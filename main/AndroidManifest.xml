@@ -35,7 +35,9 @@
         <activity android:name=".DateActivity" />
         <activity android:name=".TimeActivity" />
         <activity android:name=".DateTimeActivity" />
-        <activity android:name=".CollectionActivity"></activity>
+        <activity android:name=".CollectionActivity" />
+        <activity android:name=".DynamicFragmActivity" />
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>

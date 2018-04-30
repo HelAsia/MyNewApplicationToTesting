@@ -39,7 +39,7 @@ public class CollectionActivity extends AppCompatActivity {
                 if (name == null){
                     Toast.makeText(context,"Name is empty",Toast.LENGTH_SHORT).show();
                 }else{
-                    if (namesList.size() > 1){
+                    if (namesList.size() > 0){
                         String namesSizeString = String.valueOf(namesList.size());
                         Toast.makeText(context,namesSizeString,Toast.LENGTH_SHORT).show();
                     }else{
