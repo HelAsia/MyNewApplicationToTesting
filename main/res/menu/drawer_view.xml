@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/camera" />
-        <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_animation_activity"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/gallery" />
+            android:title="@string/animation_activity" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/slideshow" />
+            android:id="@+id/nav_equation_activity"
+            android:title="@string/equation_activity" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/tools" />
+            android:id="@+id/nav_fragments_activity"
+            android:title="@string/fragments_activity" />
+        <item
+            android:id="@+id/nav_fragment_swipe_activity"
+            android:title="@string/fragment_swipe_activity" />
+        <item
+            android:id="@+id/nav_fragment_toolbsr_activity"
+            android:title="@string/fragment_toolbsr_activity" />
+        <item
+            android:id="@+id/nav_buttons_activity"
+            android:title="@string/buttons_activity" />
+        <item
+            android:id="@+id/nav_collection_activity"
+            android:title="@string/collection_activity" />
+        <item
+            android:id="@+id/nav_dynamic_fragment_activity"
+            android:title="@string/dynamic_fragment_activity" />
+        <item
+            android:id="@+id/nav_pager_activity"
+            android:title="@string/pager_activity" />
+        <item
+            android:id="@+id/nav_listview_activity"
+            android:title="@string/listview_activity" />
     </group>
 </menu>

@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MyChooseActivity extends AppCompatActivity {
-    Context contex;
+    Context context;
     String element1 = "Animation";
     String element2 = "Equation";
     String element3 = "Fragments";
@@ -19,7 +19,6 @@ public class MyChooseActivity extends AppCompatActivity {
     String element7 = "Collections";
     String element8 = "DynamicFragments";
     String element9 = "PagerActivity";
-    String element10 = "DrawerActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +26,7 @@ public class MyChooseActivity extends AppCompatActivity {
         ListView optionList = new ListView(this);
         setContentView(optionList);
 
-        final String[] items = {element1, element2, element3, element4, element5, element6, element7, element8, element9, element10};
+        final String[] items = {element1, element2, element3, element4, element5, element6, element7, element8, element9};
         ArrayAdapter<String> optionAdapter = new ArrayAdapter<String>(this, R.layout.activity_my_choose, R.id.option_name, items);
 
         optionList.setAdapter(optionAdapter);
@@ -36,36 +35,33 @@ public class MyChooseActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                contex = getApplicationContext();
+                context = getApplicationContext();
                 if (items[i] == element1) {
-                    Intent intent = new Intent(contex, AnimationActivity.class);
+                    Intent intent = new Intent(context, AnimationActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element2) {
-                    Intent intent = new Intent(contex, EquationActivity.class);
+                    Intent intent = new Intent(context, EquationActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element3) {
-                    Intent intent = new Intent(contex, FragmentActivity.class);
+                    Intent intent = new Intent(context, FragmentActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element4) {
-                    Intent intent = new Intent(contex, SwipeActivity.class);
+                    Intent intent = new Intent(context, SwipeActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element5) {
-                    Intent intent = new Intent(contex, ExampleActivity.class);
+                    Intent intent = new Intent(context, ExampleActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element6) {
-                    Intent intent = new Intent(contex, ButtonsActivity.class);
+                    Intent intent = new Intent(context, ButtonsActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element7) {
-                    Intent intent = new Intent(contex, CollectionActivity.class);
+                    Intent intent = new Intent(context, CollectionActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element8) {
-                    Intent intent = new Intent(contex, DynamicFragmActivity.class);
+                    Intent intent = new Intent(context, DynamicFragmActivity.class);
                     startActivity(intent);
                 }else if (items[i] == element9) {
-                    Intent intent = new Intent(contex, PagerActivity.class);
-                    startActivity(intent);
-                }else if (items[i] == element10) {
-                    Intent intent = new Intent(contex, DrawerActivity.class);
+                    Intent intent = new Intent(context, PagerActivity.class);
                     startActivity(intent);
                 }
             }

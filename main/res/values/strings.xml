@@ -7,8 +7,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_pager">PagerActivity</string>
-    <string name="tools">Tools</string>
-    <string name="camera">Camera</string>
-    <string name="gallery">Gallery</string>
-    <string name="slideshow">Slideshow</string>
+    <string name="animation_activity">Animation Example</string>
+    <string name="equation_activity">Equation Example</string>
+    <string name="fragments_activity">Fragments Example</string>
+    <string name="fragment_swipe_activity">Fragment Swipe Example</string>
+    <string name="fragment_toolbsr_activity">Fragment Toolbar Example</string>
+    <string name="buttons_activity">Buttons Example</string>
+    <string name="collection_activity">Collection Example</string>
+    <string name="dynamic_fragment_activity">Dynamic Fragment Example</string>
+    <string name="pager_activity">Pager(TabLayout) Example</string>
+    <string name="listview_activity">ListView Example</string>
 </resources>

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 context = getApplicationContext();
 
-                Intent intent = new Intent(context, MyChooseActivity.class);
+                Intent intent = new Intent(context, DrawerActivity.class);
                 startActivity(intent);
             }
         });

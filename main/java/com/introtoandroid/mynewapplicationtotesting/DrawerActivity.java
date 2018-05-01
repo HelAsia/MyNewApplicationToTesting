@@ -1,5 +1,7 @@
 package com.introtoandroid.mynewapplicationtotesting;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -10,21 +12,24 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class DrawerActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer);
 
+        context = getApplicationContext();
+
         Toolbar toolbar = ( Toolbar ) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
-
         mDrawerLayout = ( DrawerLayout ) findViewById(R.id.drawer_layout);
 
         mDrawerLayout.addDrawerListener(
@@ -58,11 +63,41 @@ public class DrawerActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         // set item as selected to persist highlight
                         menuItem.setChecked(true);
-                        // close drawer when item is tapped
+                        int id = menuItem.getItemId();
+
+                        if (id == R.id.nav_animation_activity){
+                            Intent intent = new Intent(context, AnimationActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_equation_activity) {
+                            Intent intent = new Intent(context, EquationActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_fragments_activity) {
+                            Intent intent = new Intent(context, FragmentActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_fragment_swipe_activity) {
+                            Intent intent = new Intent(context, SwipeActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_fragment_toolbsr_activity) {
+                            Intent intent = new Intent(context, ExampleActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_buttons_activity) {
+                            Intent intent = new Intent(context, ButtonsActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_collection_activity) {
+                            Intent intent = new Intent(context, CollectionActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_dynamic_fragment_activity) {
+                            Intent intent = new Intent(context, DynamicFragmActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_pager_activity) {
+                            Intent intent = new Intent(context, PagerActivity.class);
+                            startActivity(intent);
+                        }else if (id == R.id.nav_listview_activity) {
+                            Intent intent = new Intent(context, MyChooseActivity.class);
+                            startActivity(intent);
+                        }
                         mDrawerLayout.closeDrawers();
 
-                        // Add code here to update the UI based on the item selected
-                        // For example, swap UI fragments here
                         return false;
                     }
                 }
