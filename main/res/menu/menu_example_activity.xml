@@ -15,7 +15,7 @@
     android:icon="@android:drawable/ic_menu_close_clear_cancel"
     android:orderInCategory="4"
     android:title="@string/action_close"
-    app:showAsAction="ifRoom|withText"/>
+    app:showAsAction="never"/>
 
   <item
     android:id="@+id/menu_help"
