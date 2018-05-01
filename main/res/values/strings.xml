@@ -17,10 +17,18 @@
     <string name="dynamic_fragment_activity">Dynamic Fragment Example</string>
     <string name="pager_activity">Pager(TabLayout) Example</string>
     <string name="listview_activity">ListView Example</string>
-  <string name="title_activity_probaaa">ProbaaaActivity</string>
+    <string name="action_add">Add</string>
+    <string name="action_close">Close</string>
+    <string name="action_help">Help</string>
+    <string name="show_action_bar">Pokaż pasek akcji</string>
+    <string name="hide_action_bar">Ukryj pasek akcji</string>
+    <string name="nav_menu_example_activity">Menu Example</string>
+
 
   <string name="navigation_drawer_open">Open navigation drawer</string>
   <string name="navigation_drawer_close">Close navigation drawer</string>
 
   <string name="action_settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
 </resources>

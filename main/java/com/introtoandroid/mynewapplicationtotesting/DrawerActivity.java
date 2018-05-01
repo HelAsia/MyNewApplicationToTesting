@@ -62,43 +62,45 @@ public class DrawerActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         // set item as selected to persist highlight
-                        menuItem.setChecked(true);
-                        int id = menuItem.getItemId();
+                      menuItem.setChecked(true);
+                      mDrawerLayout.closeDrawers();
+                      int id = menuItem.getItemId();
 
-                        if (id == R.id.nav_animation_activity){
-                            Intent intent = new Intent(context, AnimationActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_equation_activity) {
-                            Intent intent = new Intent(context, EquationActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_fragments_activity) {
-                            Intent intent = new Intent(context, FragmentActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_fragment_swipe_activity) {
-                            Intent intent = new Intent(context, SwipeActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_fragment_toolbsr_activity) {
-                            Intent intent = new Intent(context, ExampleActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_buttons_activity) {
-                            Intent intent = new Intent(context, ButtonsActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_collection_activity) {
-                            Intent intent = new Intent(context, CollectionActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_dynamic_fragment_activity) {
-                            Intent intent = new Intent(context, DynamicFragmActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_pager_activity) {
-                            Intent intent = new Intent(context, PagerActivity.class);
-                            startActivity(intent);
-                        }else if (id == R.id.nav_listview_activity) {
-                            Intent intent = new Intent(context, MyChooseActivity.class);
-                            startActivity(intent);
-                        }
-                        mDrawerLayout.closeDrawers();
-
-                        return false;
+                      if (id == R.id.nav_animation_activity){
+                          Intent intent = new Intent(context, AnimationActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_equation_activity) {
+                          Intent intent = new Intent(context, EquationActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_fragments_activity) {
+                          Intent intent = new Intent(context, FragmentActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_fragment_swipe_activity) {
+                          Intent intent = new Intent(context, SwipeActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_fragment_toolbsr_activity) {
+                          Intent intent = new Intent(context, ExampleActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_buttons_activity) {
+                          Intent intent = new Intent(context, ButtonsActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_collection_activity) {
+                          Intent intent = new Intent(context, CollectionActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_dynamic_fragment_activity) {
+                          Intent intent = new Intent(context, DynamicFragmActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_pager_activity) {
+                          Intent intent = new Intent(context, PagerActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_listview_activity) {
+                          Intent intent = new Intent(context, MyChooseActivity.class);
+                          startActivity(intent);
+                      }else if (id == R.id.nav_menu_example_activity) {
+                        Intent intent = new Intent(context, MenuExampleActivity.class);
+                        startActivity(intent);
+                      }
+                      return false;
                     }
                 }
         );
