@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.introtoandroid.mynewapplicationtotesting">
+          package="com.introtoandroid.mynewapplicationtotesting">
 
     <application
         android:allowBackup="true"
@@ -10,20 +10,20 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MyChooseActivity" />
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".FragmentActivity" />
-        <activity android:name=".ResultsActivity" />
-        <activity android:name=".SwipeActivity" />
-        <activity android:name=".CheeseActivity" />
-        <activity android:name=".ExampleActivity" />
-        <activity android:name=".EquationActivity" />
-        <activity android:name=".ButtonsActivity" />
+        <activity android:name=".MyChooseActivity"/>
+        <activity android:name=".AnimationActivity"/>
+        <activity android:name=".FragmentActivity"/>
+        <activity android:name=".ResultsActivity"/>
+        <activity android:name=".SwipeActivity"/>
+        <activity android:name=".CheeseActivity"/>
+        <activity android:name=".ExampleActivity"/>
+        <activity android:name=".EquationActivity"/>
+        <activity android:name=".ButtonsActivity"/>
 
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -31,14 +31,19 @@
         -->
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+            android:value="@integer/google_play_services_version"/>
 
-        <activity android:name=".DateActivity" />
-        <activity android:name=".TimeActivity" />
-        <activity android:name=".DateTimeActivity" />
-        <activity android:name=".CollectionActivity" />
-        <activity android:name=".DynamicFragmActivity" />
-        <activity android:name=".DetailActivity" />
+        <activity android:name=".DateActivity"/>
+        <activity android:name=".TimeActivity"/>
+        <activity android:name=".DateTimeActivity"/>
+        <activity android:name=".CollectionActivity"/>
+        <activity android:name=".DynamicFragmActivity"/>
+        <activity android:name=".DetailActivity"/>
+        <activity
+            android:name=".PagerActivity"
+            android:label="@string/title_activity_pager"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
