@@ -8,6 +8,7 @@
             android:title="@string/animation_activity" />
         <item
             android:id="@+id/nav_equation_activity"
+            android:icon="@drawable/ic_menu_gallery"
             android:title="@string/equation_activity" />
         <item
             android:id="@+id/nav_fragments_activity"
