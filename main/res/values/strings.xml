@@ -17,4 +17,10 @@
     <string name="dynamic_fragment_activity">Dynamic Fragment Example</string>
     <string name="pager_activity">Pager(TabLayout) Example</string>
     <string name="listview_activity">ListView Example</string>
+  <string name="title_activity_probaaa">ProbaaaActivity</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="action_settings">Settings</string>
 </resources>
