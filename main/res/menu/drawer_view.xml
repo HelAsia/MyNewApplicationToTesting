@@ -36,6 +36,9 @@
         <item
           android:id="@+id/nav_menu_example_activity"
           android:title="@string/nav_menu_example_activity" />
+        <item
+          android:id="@+id/nav_default_activity"
+          android:title="@string/nav_default_activity" />
 
     </group>
 </menu>

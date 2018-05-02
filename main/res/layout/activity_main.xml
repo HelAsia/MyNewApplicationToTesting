@@ -17,7 +17,7 @@
         android:text="@string/welcoming"
         android:textSize="18pt"
         android:id="@+id/tvWelcoming"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/black"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

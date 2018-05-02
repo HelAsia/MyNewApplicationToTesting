@@ -58,7 +58,7 @@
       android:windowSoftInputMode="stateHidden">
     </activity>
     <activity
-      android:name=".BrightActivity"
+      android:name="com.introtoandroid.mynewapplicationtotesting.BrightActivity"
       android:label="@string/app_styles_and_themes_bright_name"
       android:parentActivityName=".DefaultActivity"
       android:theme="@style/Main.Bright"
@@ -68,7 +68,7 @@
         android:value=".DefaultActivity"/>
     </activity>
     <activity
-      android:name=".DarkActivity"
+      android:name="com.introtoandroid.mynewapplicationtotesting.DarkActivity"
       android:label="@string/app_styles_and_themes_dark_name"
       android:parentActivityName=".DefaultActivity"
       android:theme="@style/Main.Dark"

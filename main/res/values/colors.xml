@@ -33,6 +33,7 @@
   <color name="theme_bright_heading_text_color">@color/blue</color> <!-- kolor nagłówków -->
   <color name="theme_bright_toolbar_overflow_text_color">@color/black</color> <!-- kolor tekstu w menu nadmiarowym -->
   <color name="theme_bright_text_color">@color/black</color> <!-- kolor tekstu aktywności -->
+  <color name="theme_bright_linear_content_background">@color/aqua</color>
 
   <!--Colors dark application-->
   <color name="theme_dark_primary_dark">@color/red</color> <!--Pasek stanu -->
@@ -48,6 +49,7 @@
   <color name="theme_dark_heading_text_color">@color/blue</color> <!-- kolor nagłówków -->
   <color name="theme_dark_toolbar_overflow_text_color">@color/black</color> <!-- kolor tekstu w menu nadmiarowym -->
   <color name="theme_dark_text_color">@color/black</color> <!-- kolor tekstu aktywności -->
+  <color name="theme_dark_linear_content_background">@color/white</color>
 
   <!-- Other colors -->
   <color name="layout_divider_color">@color/black</color>

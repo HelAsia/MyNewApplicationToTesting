@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
   <!-- Styles for application "Styles and themes" -->
   <style name="PrimaryTextViewMain">
     <item name="android:textSize">@dimen/mediumsp</item>
@@ -15,16 +16,18 @@
   </style>
 
   <style name="PrimaryTextViewBright">
-    <item name="android:textSize">@dimen/mediumsp</item>
+    <item name="android:textSize">@dimen/smalldp</item>
     <item name="android:textStyle">bold</item>
     <item name="android:paddingEnd">@dimen/mediumdp</item>
     <item name="android:paddingTop">@dimen/mediumdp</item>
+    <item name="android:fontFamily">casual</item>
   </style>
 
   <style name="SecondaryTextViewBright">
     <item name="android:alpha">0.7</item>
     <item name="android:paddingEnd">@dimen/mediumdp</item>
     <item name="android:textSize">@dimen/smallsp</item>
+    <item name="android:fontFamily">casual</item>
   </style>
 
   <style name="PrimaryTextViewDark">
@@ -32,14 +35,12 @@
     <item name="android:textStyle">bold</item>
     <item name="android:paddingEnd">@dimen/mediumdp</item>
     <item name="android:paddingTop">@dimen/mediumdp</item>
-    <item name="android:fontFamily">casual</item>
   </style>
 
   <style name="SecondaryTextViewDark">
     <item name="android:alpha">0.7</item>
     <item name="android:paddingEnd">@dimen/mediumdp</item>
     <item name="android:textSize">@dimen/smallsp</item>
-    <item name="android:fontFamily">casual</item>
   </style>
 
   <style name="EditTextBright">
@@ -85,7 +86,7 @@
     <item name="android:paddingStart">@dimen/xxxlargedp</item>
     <item name="android:paddingTop">@dimen/mediumdp</item>
     <item name="android:textColor">@color/theme_bright_heading_text_color</item>
-    <item name="android:textSize">@dimen/largesp</item>
+    <item name="android:textSize">@dimen/mediumsp</item>
     <item name="android:textStyle">bold</item>
     <item name="android:fontFamily">casual</item>
   </style>
@@ -96,7 +97,7 @@
     <item name="android:paddingStart">@dimen/xxxlargedp</item>
     <item name="android:paddingTop">@dimen/mediumdp</item>
     <item name="android:textColor">@color/theme_dark_heading_text_color</item>
-    <item name="android:textSize">@dimen/largesp</item>
+    <item name="android:textSize">@dimen/mediumsp</item>
     <item name="android:textStyle">bold</item>
   </style>
   
@@ -110,6 +111,18 @@
     <item name="android:layout_margin">@dimen/mediumdp</item>
     <item name="android:layout_centerInParent">true</item>
     <item name="android:layout_alignParentStart">true</item>
+  </style>
+
+  <style name="LinearContentBodyBright">
+    <item name="android:background">@color/theme_bright_linear_content_background</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:elevation" tools:ignore="NewApi">@dimen/lowEle</item>
+  </style>
+
+  <style name="LinearContentBodyDark">
+    <item name="android:background">@color/theme_dark_linear_content_background</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:elevation" tools:ignore="NewApi">@dimen/lowEle</item>
   </style>
 
 </resources>

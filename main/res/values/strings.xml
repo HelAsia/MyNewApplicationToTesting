@@ -23,6 +23,7 @@
     <string name="show_action_bar">Show action bar</string>
     <string name="hide_action_bar">Hide action bar</string>
     <string name="nav_menu_example_activity">Menu Example</string>
+    <string name="nav_default_activity">Themes and styles Example</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
