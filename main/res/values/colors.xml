@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorBlack">#000000</color>
+
+  <!-- Basic colors -->
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <color name="black">#000000</color>
+  <color name="red">#ff3300</color>
+  <color name="blue">#0000cc</color>
+  <color name="aqua">#33ffff</color>
+  <color name="lime">#33ff33</color>
+  <color name="yellow">#ffff33</color>
+  <color name="purple">#9932CD</color>
+  <color name="pink">#FF4081</color>
+  <color name="orange">#FFA500</color>
+  <color name="white">#FFFFFF</color>
+
+  <!-- Colors bright application -->
+  <color name="theme_bright_primary_dark">@color/orange</color> <!--Pasek stanu -->
+  <color name="theme_bright_primary">@color/lime</color> <!-- ActionBar i Toolbar -->
+  <color name="theme_bright_accent">@color/yellow</color> <!-- kontrolki i FAB -->
+  <color name="theme_bright_background">@color/theme_bright_primary</color> <!-- kolor tła -->
+  <color name="theme_bright_control_highlight">@color/blue</color> <!-- kolor wyróżnienia -->
+  <color name="theme_bright_status_bar">@color/theme_bright_primary_dark</color> <!-- pasek stanu -->
+  <color name="theme_bright_action_bar">@color/theme_bright_primary</color> <!-- pasek akcji -->
+  <color name="theme_bright_window_background">@color/aqua</color> <!-- kolor okna aktywności -->
+  <color name="theme_bright_bottom_bar">@color/theme_bright_primary</color> <!-- kolor dolnego paska akcji -->
+  <color name="theme_bright_nav_bar">@color/theme_bright_primary_dark</color> <!-- kolor wysuwanego menu -->
+  <color name="theme_bright_heading_text_color">@color/blue</color> <!-- kolor nagłówków -->
+  <color name="theme_bright_toolbar_overflow_text_color">@color/black</color> <!-- kolor tekstu w menu nadmiarowym -->
+  <color name="theme_bright_text_color">@color/black</color> <!-- kolor tekstu aktywności -->
+
+  <!--Colors dark application-->
+  <color name="theme_dark_primary_dark">@color/red</color> <!--Pasek stanu -->
+  <color name="theme_dark_primary">@color/orange</color> <!-- ActionBar i Toolbar -->
+  <color name="theme_dark_accent">@color/purple</color> <!-- kontrolki i FAB -->
+  <color name="theme_dark_background">@color/theme_dark_primary</color> <!-- kolor tła -->
+  <color name="theme_dark_control_highlight">@color/lime</color> <!-- kolor wyróżnienia -->
+  <color name="theme_dark_status_bar">@color/theme_dark_primary_dark</color> <!-- pasek stanu -->
+  <color name="theme_dark_action_bar">@color/theme_dark_primary</color> <!-- pasek akcji -->
+  <color name="theme_dark_window_background">@color/pink</color> <!-- kolor okna aktywności -->
+  <color name="theme_dark_bottom_bar">@color/theme_dark_primary</color> <!-- kolor dolnego paska akcji -->
+  <color name="theme_dark_nav_bar">@color/theme_dark_primary_dark</color> <!-- kolor wysuwanego menu -->
+  <color name="theme_dark_heading_text_color">@color/blue</color> <!-- kolor nagłówków -->
+  <color name="theme_dark_toolbar_overflow_text_color">@color/black</color> <!-- kolor tekstu w menu nadmiarowym -->
+  <color name="theme_dark_text_color">@color/black</color> <!-- kolor tekstu aktywności -->
+
+  <!-- Other colors -->
+  <color name="layout_divider_color">@color/black</color>
+  <color name="image_view_color">@color/white</color>
+  <color name="theme_shape">@color/black</color>
+  <color name="default_toolbar">@color/black</color>
+  <color name="default_fab">@color/white</color>
+  <color name="transparent">@android:color/transparent</color>
+
 </resources>

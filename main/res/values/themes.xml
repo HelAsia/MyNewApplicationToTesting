@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Main" parent="Theme.AppCompat.NoActionBar"/>
+
+  <style name="Toolbar" parent="Theme.AppCompat"/>
+
+  <!-- Theme bright application -->
+  <style name="Main.Bright" parent="Main">
+    <item name="android:windowBackground">@color/theme_bright_window_background</item>
+    <item name="colorPrimaryDark">@color/theme_bright_primary_dark</item>
+    <item name="colorPrimary">@color/theme_bright_primary</item>
+    <item name="colorAccent">@color/theme_bright_accent</item>
+    <item name="colorControlHighlight">@color/theme_bright_control_highlight</item>
+    <item name="android:textColor">@color/theme_bright_text_color</item>
+    <item name="android:textColorHint">@color/theme_bright_primary_dark</item>
+  </style>
+
+  <!-- Theme bright application toolbar -->
+  <style name="Toolbar.Bright" parent="Toolbar">
+    <item name="android:colorBackground">@color/theme_bright_accent</item>
+    <item name="android:textColorPrimary">@color/theme_bright_text_color</item>
+    <item name="android:textColorSecondary">@color/theme_bright_text_color</item>
+    <item name="android:textColor">@color/theme_bright_toolbar_overflow_text_color</item>
+  </style>
+
+  <!-- Theme dark application -->
+  <style name="Main.Dark" parent="Main">
+    <item name="android:windowBackground">@color/theme_dark_window_background</item>
+    <item name="colorPrimaryDark">@color/theme_dark_primary_dark</item>
+    <item name="colorPrimary">@color/theme_dark_primary</item>
+    <item name="colorAccent">@color/theme_dark_accent</item>
+    <item name="colorControlHighlight">@color/theme_dark_control_highlight</item>
+    <item name="android:textColor">@color/theme_dark_text_color</item>
+    <item name="android:textColorHint">@color/theme_dark_primary_dark</item>
+  </style>
+
+  <!-- Theme bright application toolbar -->
+  <style name="Toolbar.Dark" parent="Toolbar">
+    <item name="android:colorBackground">@color/theme_dark_accent</item>
+    <item name="android:textColorPrimary">@color/theme_dark_text_color</item>
+    <item name="android:textColorSecondary">@color/theme_dark_text_color</item>
+    <item name="android:textColor">@color/theme_dark_toolbar_overflow_text_color</item>
+  </style>
+
+</resources>
