@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+  <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_simple"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/theme_bright_action_bar"
+    android:elevation="@dimen/highEle"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/Toolbar.Bright"
+    android:contentInsetLeft="@dimen/toolbar_inset"
+    android:contentInsetStart="@dimen/toolbar_inset"
+    tools:showIn="@layout/activity_bright"/>
+
+</merge>

@@ -35,7 +35,7 @@
     <item name="android:textColorHint">@color/theme_dark_primary_dark</item>
   </style>
 
-  <!-- Theme bright application toolbar -->
+  <!-- Theme dark application toolbar -->
   <style name="Toolbar.Dark" parent="Toolbar">
     <item name="android:colorBackground">@color/theme_dark_accent</item>
     <item name="android:textColorPrimary">@color/theme_dark_text_color</item>
