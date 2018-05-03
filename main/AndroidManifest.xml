@@ -52,14 +52,14 @@
     <activity android:name=".MenuExampleActivity">
     </activity>
     <activity
-      android:name=".DefaultActivity"
       android:label="@string/app_styles_and_themes_default_name"
+      android:name=".DefaultActivity"
       android:theme="@style/Main"
       android:windowSoftInputMode="stateHidden">
     </activity>
     <activity
-      android:name="com.introtoandroid.mynewapplicationtotesting.BrightActivity"
       android:label="@string/app_styles_and_themes_bright_name"
+      android:name=".BrightActivity"
       android:parentActivityName=".DefaultActivity"
       android:theme="@style/Main.Bright"
       android:windowSoftInputMode="stateHidden">
@@ -68,14 +68,38 @@
         android:value=".DefaultActivity"/>
     </activity>
     <activity
-      android:name="com.introtoandroid.mynewapplicationtotesting.DarkActivity"
       android:label="@string/app_styles_and_themes_dark_name"
+      android:name=".DarkActivity"
       android:parentActivityName=".DefaultActivity"
       android:theme="@style/Main.Dark"
       android:windowSoftInputMode="stateHidden">
       <meta-data
         android:name="android.support.PARENT_ACTIVITY"
         android:value=".DefaultActivity"/>
+    </activity>
+    <activity
+      android:name=".SampleMaterialActivity"
+      android:label="@string/app_name_material"
+      android:theme="@style/AppThemeMaterial"
+      android:configChanges="orientation|screenSize">
+    </activity>
+    <activity
+      android:name=".TransitionAddActivity"
+      android:label="@string/title_activity_transition_add"
+      android:configChanges="orientation|screenSize"
+      android:parentActivityName=".SampleMaterialActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".SampleMaterialActivity"/>
+    </activity>
+    <activity
+      android:name=".TransitionEditActivity"
+      android:label="@string/title_activity_transition_edit"
+      android:configChanges="orientation|screenSize"
+      android:parentActivityName=".SampleMaterialActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".SampleMaterialActivity"/>
     </activity>
   </application>
 

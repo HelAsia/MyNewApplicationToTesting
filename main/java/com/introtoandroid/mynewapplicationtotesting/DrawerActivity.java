@@ -102,6 +102,9 @@ public class DrawerActivity extends AppCompatActivity {
                       }else if (id == R.id.nav_default_activity) {
                         Intent intent = new Intent(context, DefaultActivity.class);
                         startActivity(intent);
+                      }else if (id == R.id.nav_material_design_activity) {
+                        Intent intent = new Intent(context, SampleMaterialActivity.class);
+                        startActivity(intent);
                       }
                       return false;
                     }

@@ -2,6 +2,8 @@
 <resources>
 
   <style name="Main" parent="Theme.AppCompat.NoActionBar"/>
+  <style name="BaseThemeMaterial" parent="Theme.AppCompat.Light.DarkActionBar"/>
+  <style name="AppThemeMaterial" parent="BaseThemeMaterial"/>
 
   <style name="Toolbar" parent="Theme.AppCompat"/>
 

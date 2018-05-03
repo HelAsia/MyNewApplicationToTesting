@@ -28,4 +28,8 @@
   <dimen name="linear_icon_margin">30dp</dimen>
 
   <dimen name="divider">1dp</dimen>
+
+  <dimen name="padding">16dp</dimen>
+  <dimen name="text_size">32sp</dimen>
+  <dimen name="initial_size">100sp</dimen>
 </resources>

@@ -24,6 +24,7 @@
     <string name="hide_action_bar">Hide action bar</string>
     <string name="nav_menu_example_activity">Menu Example</string>
     <string name="nav_default_activity">Themes and styles Example</string>
+    <string name="nav_material_design_activity">Material Design Example</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -51,5 +52,66 @@
 
     <item name="visible" type="id"/>
     <item name="masked" type="id"/>
+
+    <string name="app_name_material">Material Design</string>
+    <string name="add_button">Dodaj</string>
+    <string name="update_button">Zmień</string>
+    <string name="delete_button">Usuń</string>
+    <string name="fab2">Dodaj przyjaciela</string>
+    <string name="title_activity_transition_edit">Edycja kontaktu</string>
+    <string name="title_activity_transition_add">Dodawanie kontaktu</string>
+
+    <string-array name="names_array">
+        <item>Michał</item>
+        <item>Janka</item>
+        <item>Krzysiek</item>
+        <item>Anna</item>
+        <item>Janek</item>
+        <item>Marcelina</item>
+        <item>Dawid</item>
+        <item>Michasia</item>
+        <item>Jurek</item>
+        <item>Katarzyna</item>
+        <item>Joachim</item>
+        <item>Liza</item>
+        <item>Robert</item>
+        <item>Angela</item>
+        <item>Bartek</item>
+        <item>Hieronim</item>
+        <item>Wilhelm</item>
+        <item>Stefa</item>
+        <item>Maciek</item>
+        <item>Nikola</item>
+        <item>Jasiek</item>
+        <item>Joanna</item>
+        <item>Daniel</item>
+        <item>Ela</item>
+        <item>Krystian</item>
+        <item>Rebeka</item>
+        <item>Eryk</item>
+        <item>Krystyna</item>
+        <item>Jakub</item>
+        <item>Maria</item>
+        <item>Ryszard</item>
+        <item>Krystyna</item>
+        <item>Stefania</item>
+        <item>Amanda</item>
+        <item>Marek</item>
+        <item>Julia</item>
+        <item>Tomasz</item>
+        <item>Laura</item>
+        <item>Tymon</item>
+        <item>Sylwia</item>
+        <item>Antek</item>
+        <item>Kornelia</item>
+        <item>Karol</item>
+        <item>Tomek</item>
+        <item>Ireneusz</item>
+        <item>Witold</item>
+        <item>Roman</item>
+        <item>Bartek</item>
+        <item>Darek</item>
+        <item>Danuta</item>
+    </string-array>
 
 </resources>

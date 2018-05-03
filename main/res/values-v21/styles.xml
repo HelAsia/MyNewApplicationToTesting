@@ -1,2 +1,8 @@
 <resources>
+
+  <style name="BaseThemeMaterial" parent="Theme.AppCompat.Light.DarkActionBar"/>
+  <style name="AppThemeMaterial" parent="BaseThemeMaterial">
+  <item name="elevation">4dp</item>
+  </style>
+
 </resources>

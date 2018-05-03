@@ -9,44 +9,44 @@
   <color name="colorAccent">#FF4081</color>
 
   <color name="black">#000000</color>
-  <color name="red">#ff3300</color>
-  <color name="blue">#0000cc</color>
+  <color name="red_first">#ff3300</color>
+  <color name="blue_first">#0000cc</color>
   <color name="aqua">#33ffff</color>
   <color name="lime">#33ff33</color>
   <color name="yellow">#ffff33</color>
-  <color name="purple">#9932CD</color>
-  <color name="pink">#FF4081</color>
-  <color name="orange">#FFA500</color>
+  <color name="purple_first">#9932CD</color>
+  <color name="pink_first">#FF4081</color>
+  <color name="orange_first">#FFA500</color>
   <color name="white">#FFFFFF</color>
 
   <!-- Colors bright application -->
-  <color name="theme_bright_primary_dark">@color/orange</color> <!--Pasek stanu -->
+  <color name="theme_bright_primary_dark">@color/orange_first</color> <!--Pasek stanu -->
   <color name="theme_bright_primary">@color/lime</color> <!-- ActionBar i Toolbar -->
   <color name="theme_bright_accent">@color/yellow</color> <!-- kontrolki i FAB -->
   <color name="theme_bright_background">@color/theme_bright_primary</color> <!-- kolor tła -->
-  <color name="theme_bright_control_highlight">@color/blue</color> <!-- kolor wyróżnienia -->
+  <color name="theme_bright_control_highlight">@color/blue_first</color> <!-- kolor wyróżnienia -->
   <color name="theme_bright_status_bar">@color/theme_bright_primary_dark</color> <!-- pasek stanu -->
   <color name="theme_bright_action_bar">@color/theme_bright_primary</color> <!-- pasek akcji -->
   <color name="theme_bright_window_background">@color/aqua</color> <!-- kolor okna aktywności -->
   <color name="theme_bright_bottom_bar">@color/theme_bright_primary</color> <!-- kolor dolnego paska akcji -->
   <color name="theme_bright_nav_bar">@color/theme_bright_primary_dark</color> <!-- kolor wysuwanego menu -->
-  <color name="theme_bright_heading_text_color">@color/blue</color> <!-- kolor nagłówków -->
+  <color name="theme_bright_heading_text_color">@color/blue_first</color> <!-- kolor nagłówków -->
   <color name="theme_bright_toolbar_overflow_text_color">@color/black</color> <!-- kolor tekstu w menu nadmiarowym -->
   <color name="theme_bright_text_color">@color/black</color> <!-- kolor tekstu aktywności -->
   <color name="theme_bright_linear_content_background">@color/aqua</color>
 
   <!--Colors dark application-->
-  <color name="theme_dark_primary_dark">@color/red</color> <!--Pasek stanu -->
-  <color name="theme_dark_primary">@color/orange</color> <!-- ActionBar i Toolbar -->
-  <color name="theme_dark_accent">@color/purple</color> <!-- kontrolki i FAB -->
+  <color name="theme_dark_primary_dark">@color/red_first</color> <!--Pasek stanu -->
+  <color name="theme_dark_primary">@color/orange_first</color> <!-- ActionBar i Toolbar -->
+  <color name="theme_dark_accent">@color/purple_first</color> <!-- kontrolki i FAB -->
   <color name="theme_dark_background">@color/theme_dark_primary</color> <!-- kolor tła -->
   <color name="theme_dark_control_highlight">@color/lime</color> <!-- kolor wyróżnienia -->
   <color name="theme_dark_status_bar">@color/theme_dark_primary_dark</color> <!-- pasek stanu -->
   <color name="theme_dark_action_bar">@color/theme_dark_primary</color> <!-- pasek akcji -->
-  <color name="theme_dark_window_background">@color/pink</color> <!-- kolor okna aktywności -->
+  <color name="theme_dark_window_background">@color/pink_first</color> <!-- kolor okna aktywności -->
   <color name="theme_dark_bottom_bar">@color/theme_dark_primary</color> <!-- kolor dolnego paska akcji -->
   <color name="theme_dark_nav_bar">@color/theme_dark_primary_dark</color> <!-- kolor wysuwanego menu -->
-  <color name="theme_dark_heading_text_color">@color/blue</color> <!-- kolor nagłówków -->
+  <color name="theme_dark_heading_text_color">@color/blue_first</color> <!-- kolor nagłówków -->
   <color name="theme_dark_toolbar_overflow_text_color">@color/black</color> <!-- kolor tekstu w menu nadmiarowym -->
   <color name="theme_dark_text_color">@color/black</color> <!-- kolor tekstu aktywności -->
   <color name="theme_dark_linear_content_background">@color/white</color>
@@ -58,5 +58,69 @@
   <color name="default_toolbar">@color/black</color>
   <color name="default_fab">@color/white</color>
   <color name="transparent">@android:color/transparent</color>
+
+  <item name="blue" type="color">#2196f3</item>
+  <item name="purple" type="color">#9c27b0</item>
+  <item name="green" type="color">#1b5e20</item>
+  <item name="orange" type="color">#ff5722</item>
+  <item name="red" type="color">#f44336</item>
+  <item name="indigo" type="color">#3f51b5</item>
+  <item name="deep_purple" type="color">#673ab7</item>
+  <item name="light_green" type="color">#689f38</item>
+  <item name="teal" type="color">#009688</item>
+  <item name="pink" type="color">#e91e63</item>
+
+  <integer-array name="initial_colors">
+    <item>@color/blue</item>
+    <item>@color/purple</item>
+    <item>@color/green</item>
+    <item>@color/orange</item>
+    <item>@color/red</item>
+    <item>@color/indigo</item>
+    <item>@color/deep_purple</item>
+    <item>@color/light_green</item>
+    <item>@color/teal</item>
+    <item>@color/pink</item>
+    <item>@color/blue</item>
+    <item>@color/purple</item>
+    <item>@color/green</item>
+    <item>@color/orange</item>
+    <item>@color/red</item>
+    <item>@color/indigo</item>
+    <item>@color/deep_purple</item>
+    <item>@color/light_green</item>
+    <item>@color/teal</item>
+    <item>@color/pink</item>
+    <item>@color/blue</item>
+    <item>@color/purple</item>
+    <item>@color/green</item>
+    <item>@color/orange</item>
+    <item>@color/red</item>
+    <item>@color/indigo</item>
+    <item>@color/deep_purple</item>
+    <item>@color/light_green</item>
+    <item>@color/teal</item>
+    <item>@color/pink</item>
+    <item>@color/blue</item>
+    <item>@color/purple</item>
+    <item>@color/green</item>
+    <item>@color/orange</item>
+    <item>@color/red</item>
+    <item>@color/indigo</item>
+    <item>@color/deep_purple</item>
+    <item>@color/light_green</item>
+    <item>@color/teal</item>
+    <item>@color/pink</item>
+    <item>@color/blue</item>
+    <item>@color/purple</item>
+    <item>@color/green</item>
+    <item>@color/orange</item>
+    <item>@color/red</item>
+    <item>@color/indigo</item>
+    <item>@color/deep_purple</item>
+    <item>@color/light_green</item>
+    <item>@color/teal</item>
+    <item>@color/pink</item>
+  </integer-array>
 
 </resources>
