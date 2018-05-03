@@ -2,7 +2,6 @@ package com.introtoandroid.mynewapplicationtotesting;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -20,13 +19,13 @@ public class BrightActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_bright);
 
-    Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+    Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar_simple);
     if (mToolbar != null) {
       setSupportActionBar(mToolbar);
       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    EditText editText = ( EditText ) findViewById(R.id.editText02);
+    EditText editText = ( EditText ) findViewById(R.id.editText);
     editText.setSelection(editText.getText().length());
 
     FloatingActionButton fab = ( FloatingActionButton ) findViewById(R.id.fab);
@@ -52,7 +51,7 @@ public class BrightActivity extends AppCompatActivity {
 
     ImageButton emailButton = ( ImageButton ) bottomBar.findViewById(R.id.email_button);
     if (emailButton != null) {
-      mapButton.setOnClickListener(new View.OnClickListener() {
+      emailButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
           Toast.makeText(getApplicationContext(), "Email Button", Toast.LENGTH_SHORT).show();
@@ -62,7 +61,7 @@ public class BrightActivity extends AppCompatActivity {
 
     ImageButton infoButton = ( ImageButton ) bottomBar.findViewById(R.id.info_button);
     if (infoButton != null) {
-      mapButton.setOnClickListener(new View.OnClickListener() {
+      infoButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
           Toast.makeText(getApplicationContext(), "Info Button", Toast.LENGTH_SHORT).show();

@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 public class DefaultActivity extends AppCompatActivity {
@@ -54,7 +53,7 @@ public class DefaultActivity extends AppCompatActivity {
 
     ImageButton emailButton = ( ImageButton ) bottomBar.findViewById(R.id.email_button);
     if (emailButton != null) {
-      mapButton.setOnClickListener(new View.OnClickListener() {
+      emailButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
           Toast.makeText(getApplicationContext(), "Email Button", Toast.LENGTH_SHORT).show();
@@ -64,7 +63,7 @@ public class DefaultActivity extends AppCompatActivity {
 
     ImageButton infoButton = ( ImageButton ) bottomBar.findViewById(R.id.info_button);
     if (infoButton != null) {
-      mapButton.setOnClickListener(new View.OnClickListener() {
+      infoButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
           Toast.makeText(getApplicationContext(), "Info Button", Toast.LENGTH_SHORT).show();
@@ -88,7 +87,7 @@ public class DefaultActivity extends AppCompatActivity {
       startActivity(intent);
       return true;
     }else if (id == R.id.action_dark) {
-      Intent intent = new Intent(this, DefaultActivity.class);
+      Intent intent = new Intent(this, DarkActivity.class);
       startActivity(intent);
       return true;
     }

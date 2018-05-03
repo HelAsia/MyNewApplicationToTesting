@@ -49,4 +49,7 @@
     <string name="fab">Add</string>
     <string name="hint">Hint</string>
 
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+
 </resources>

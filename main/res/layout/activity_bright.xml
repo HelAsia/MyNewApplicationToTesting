@@ -15,7 +15,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_above="@+id/bottom_bar"
-    android:layout_below="@+id/toolbar">
+    android:layout_below="@+id/toolbar_simple">
 
     <LinearLayout
       android:layout_width="match_parent"
@@ -24,9 +24,9 @@
 
       <LinearLayout
         android:id="@+id/linearlayout"
+        style="@style/LinearContentBodyBright"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/LinearContentBodyBright"
         android:orientation="vertical">
 
         <TextView
@@ -54,19 +54,19 @@
             android:id="@+id/textViewPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/circle"
+            android:layout_toEndOf="@id/circle"
             android:text="@string/primary_text_view"
-            android:layout_toRightOf="@+id/circle"
+            android:layout_toRightOf="@id/circle"
             style="@style/PrimaryTextViewBright"/>
 
           <TextView
             android:id="@+id/textViewSecondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewPrimary"
+            android:layout_below="@id/textViewPrimary"
             android:text="@string/second_text_view"
-            android:layout_toEndOf="@+id/circle"
-            android:layout_toRightOf="@+id/circle"
+            android:layout_toEndOf="@id/circle"
+            android:layout_toRightOf="@id/circle"
             style="@style/SecondaryTextViewBright"/>
 
           <ImageView
@@ -94,9 +94,9 @@
             android:id="@+id/textViewPrimary01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/rectangle"
+            android:layout_toEndOf="@id/rectangle"
             android:text="@string/primary_text_view"
-            android:layout_toRightOf="@+id/rectangle"
+            android:layout_toRightOf="@id/rectangle"
             style="@style/PrimaryTextViewBright"/>
 
           <TextView
@@ -105,8 +105,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textViewPrimary01"
             android:text="@string/second_text_view"
-            android:layout_toEndOf="@+id/rectangle"
-            android:layout_toRightOf="@+id/rectangle"
+            android:layout_toEndOf="@id/rectangle"
+            android:layout_toRightOf="@id/rectangle"
             style="@style/SecondaryTextViewBright"/>
 
           <ImageView
@@ -134,9 +134,9 @@
             android:id="@+id/textViewPrimary02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/circle01"
+            android:layout_toEndOf="@id/circle01"
             android:text="@string/primary_text_view"
-            android:layout_toRightOf="@+id/circle01"
+            android:layout_toRightOf="@id/circle01"
             style="@style/PrimaryTextViewBright"/>
 
           <TextView
@@ -145,8 +145,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textViewPrimary02"
             android:text="@string/second_text_view"
-            android:layout_toEndOf="@+id/circle01"
-            android:layout_toRightOf="@+id/circle01"
+            android:layout_toEndOf="@id/circle01"
+            android:layout_toRightOf="@id/circle01"
             style="@style/SecondaryTextViewBright"/>
 
           <ImageView
@@ -174,9 +174,9 @@
             android:id="@+id/textViewPrimary03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/rectangle01"
+            android:layout_toEndOf="@id/rectangle01"
             android:text="@string/primary_text_view"
-            android:layout_toRightOf="@+id/rectangle01"
+            android:layout_toRightOf="@id/rectangle01"
             style="@style/PrimaryTextViewBright"/>
 
           <TextView
@@ -185,8 +185,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textViewPrimary03"
             android:text="@string/second_text_view"
-            android:layout_toEndOf="@+id/rectangle01"
-            android:layout_toRightOf="@+id/rectangle01"
+            android:layout_toEndOf="@id/rectangle01"
+            android:layout_toRightOf="@id/rectangle01"
             style="@style/SecondaryTextViewBright"/>
 
           <ImageView
@@ -197,165 +197,168 @@
         </RelativeLayout>
       </LinearLayout>
 
-      <View style="@style/LayoutGap"/>
+    <View style="@style/LayoutGap"/>
 
       <LinearLayout
+        android:id="@+id/linearlayout"
         style="@style/LinearContentBodyBright"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-          android:id="@+id/text_view_heading01"
-          style="@style/HeadingBright"
+      <TextView
+        android:id="@+id/text_view_heading01"
+        style="@style/HeadingBright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_text_heading"/>
+
+      <View style="@style/LayoutDevider"/>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+          android:id="@+id/circle02"
+          style="@style/Circle"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:background="@drawable/circle"/>
+
+        <android.support.design.widget.TextInputLayout
+          android:id="@+id/input_layout"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/edit_text_heading"/>
+          android:layout_centerVertical="true"
+          android:layout_toEndOf="@id/circle02"
+          android:layout_toRightOf="@id/circle02">
 
-        <View style="@style/LayoutDevider"/>
-
-        <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-
-          <View
-            android:id="@+id/circle02"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/circle"/>
-
-          <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/circle02"
-            android:layout_toRightOf="@+id/circle02">
-
-            <EditText
-              android:id="@+id/editText02"
-              style="@style/EditTextBright"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:hint="@string/hint"
-              android:text="@string/editText"/>
-          </android.support.design.widget.TextInputLayout>
-
-          <ImageView
-            android:id="@+id/info_view04"
-            style="@style/ImageView"
+          <EditText
+            android:id="@+id/editText"
+            style="@style/EditTextBright"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <View style="@style/LayoutDevider"/>
-
-        <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-
-          <View
-            android:id="@+id/rectangle03"
-            style="@style/Rectangle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/rectangle"/>
-
-          <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout01"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/rectangle03"
-            android:layout_toRightOf="@+id/rectangle03">
+            android:hint="@string/hint"
+            android:text="@string/editText"/>
+        </android.support.design.widget.TextInputLayout>
 
-            <EditText
-              android:id="@+id/editText03"
-              style="@style/EditTextBright"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:hint="@string/hint"
-              android:text="@string/editText"/>
-          </android.support.design.widget.TextInputLayout>
+        <ImageView
+          android:id="@+id/info_view04"
+          style="@style/ImageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </RelativeLayout>
 
-          <ImageView
-            android:id="@+id/info_view05"
-            style="@style/ImageView"
+      <View style="@style/LayoutDevider"/>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+          android:id="@+id/rectangle03"
+          style="@style/Rectangle"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:background="@drawable/rectangle"/>
+
+        <android.support.design.widget.TextInputLayout
+          android:id="@+id/input_layout01"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toEndOf="@id/rectangle03"
+          android:layout_toRightOf="@id/rectangle03">
+
+          <EditText
+            android:id="@+id/editText03"
+            style="@style/EditTextBright"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <View style="@style/LayoutDevider"/>
-
-        <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-
-          <View
-            android:id="@+id/circle03"
-            style="@style/Circle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/circle"/>
-
-          <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout02"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/circle03"
-            android:layout_toRightOf="@+id/circle03">
+            android:hint="@string/hint"
+            android:text="@string/editText"/>
+        </android.support.design.widget.TextInputLayout>
 
-            <EditText
-              android:id="@+id/editText04"
-              style="@style/EditTextBright"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:hint="@string/hint"
-              android:text="@string/editText"/>
-          </android.support.design.widget.TextInputLayout>
+        <ImageView
+          android:id="@+id/info_view05"
+          style="@style/ImageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </RelativeLayout>
 
-          <ImageView
-            android:id="@+id/info_view06"
-            style="@style/ImageView"
+      <View style="@style/LayoutDevider"/>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+          android:id="@+id/circle03"
+          style="@style/Circle"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:background="@drawable/circle"/>
+
+        <android.support.design.widget.TextInputLayout
+          android:id="@+id/input_layout02"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toEndOf="@id/circle03"
+          android:layout_toRightOf="@id/circle03">
+
+          <EditText
+            android:id="@+id/editText04"
+            style="@style/EditTextBright"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <View style="@style/LayoutDevider"/>
-
-        <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-
-          <View
-            android:id="@+id/rectangle04"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/circle"/>
-
-          <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout03"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/rectangle04"
-            android:layout_toRightOf="@+id/rectangle04">
+            android:hint="@string/hint"
+            android:text="@string/editText"/>
+        </android.support.design.widget.TextInputLayout>
 
-            <EditText
-              android:id="@+id/editText05"
-              style="@style/EditTextBright"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:hint="@string/hint"
-              android:text="@string/editText"/>
-          </android.support.design.widget.TextInputLayout>
+        <ImageView
+          android:id="@+id/info_view06"
+          style="@style/ImageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </RelativeLayout>
 
-          <ImageView
-            android:id="@+id/info_view07"
-            style="@style/ImageView"
+      <View style="@style/LayoutDevider"/>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+          android:id="@+id/rectangle04"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:background="@drawable/circle"/>
+
+        <android.support.design.widget.TextInputLayout
+          android:id="@+id/input_layout03"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toEndOf="@id/rectangle04"
+          android:layout_toRightOf="@id/rectangle04">
+
+          <EditText
+            android:id="@+id/editText05"
+            style="@style/EditTextBright"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:hint="@string/hint"
+            android:text="@string/editText"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+          android:id="@+id/info_view07"
+          style="@style/ImageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </RelativeLayout>
       </LinearLayout>
     </LinearLayout>
   </ScrollView>
@@ -384,8 +387,8 @@
     android:elevation="@dimen/midEle"
     android:minHeight="?attr/actionBarSize"
     android:theme="@style/Toolbar.Bright"
-    android:contentInsetLeft="@dimen/bottom_bar_inset"
-    android:contentInsetStart="@dimen/bottom_bar_inset">
+    toolbar:contentInsetLeft="@dimen/bottom_bar_inset"
+    toolbar:contentInsetStart="@dimen/bottom_bar_inset">
 
     <LinearLayout
       android:layout_width="match_parent"
@@ -397,7 +400,7 @@
         android:id="@+id/map_button"
         style="@style/ImageButton"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/map"
         android:src="@android:drawable/ic_dialog_map"/>
 
@@ -405,7 +408,7 @@
         android:id="@+id/email_button"
         style="@style/ImageButton"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/email"
         android:src="@android:drawable/ic_dialog_email"/>
 
@@ -413,10 +416,9 @@
         android:id="@+id/info_button"
         style="@style/ImageButton"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/info"
         android:src="@android:drawable/ic_dialog_info"/>
     </LinearLayout>
   </android.support.v7.widget.Toolbar>
-
 </RelativeLayout>
