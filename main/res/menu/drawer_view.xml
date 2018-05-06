@@ -45,6 +45,10 @@
         <item
           android:id="@+id/nav_my_card_view_activity"
           android:title="@string/nav_my_card_view_activity" />
+        <item
+          android:id="@+id/nav_simple_preferences_activity"
+          android:title="@string/nav_simple_preferences_activity" />
+
 
     </group>
 </menu>

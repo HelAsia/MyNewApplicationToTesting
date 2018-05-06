@@ -5,6 +5,8 @@
   <style name="BaseThemeMaterial" parent="Theme.AppCompat.Light.DarkActionBar"/>
   <style name="AppThemeMaterial" parent="BaseThemeMaterial"/>
 
+  <style name="AppThemePreferences" parent="android:Theme.Holo.Light.DarkActionBar"/>
+
   <style name="Toolbar" parent="Theme.AppCompat"/>
 
   <!-- Theme bright application -->
@@ -44,5 +46,7 @@
     <item name="android:textColorSecondary">@color/theme_dark_text_color</item>
     <item name="android:textColor">@color/theme_dark_toolbar_overflow_text_color</item>
   </style>
+
+
 
 </resources>

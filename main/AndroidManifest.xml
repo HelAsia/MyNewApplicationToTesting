@@ -4,7 +4,7 @@
 
   <application
     android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
+    android:icon="@drawable/cat"
     android:label="@string/app_name"
     android:supportsRtl="true"
     android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -103,10 +103,20 @@
         android:name="android.support.PARENT_ACTIVITY"
         android:value=".SampleMaterialActivity"/>
     </activity>
-    <activity android:name=".MyCardViewActivity"
+    <activity
       android:configChanges="orientation|screenSize"
       android:label="@string/title_activity_my_cardview"
+      android:name=".MyCardViewActivity"
       android:theme="@style/AppThemeMaterial">
+    </activity>
+    <activity android:name=".SimplePreferencesActivity"
+      android:label="@string/app_name_preferences"
+      android:theme="@style/AppThemePreferences">
+    </activity>
+    <activity android:name=".MoreSimplePreferencesActivity"
+      android:label="@string/title_activity_more_simple_preferences"
+      android:theme="@style/AppThemePreferences"
+      android:parentActivityName=".SimplePreferencesActivity">
     </activity>
   </application>
 

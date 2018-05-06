@@ -25,7 +25,8 @@
   <string name="nav_menu_example_activity">Menu Example</string>
   <string name="nav_default_activity">Themes and styles Example</string>
   <string name="nav_material_design_activity">Material Design Example</string>
-  <string name="nav_my_card_view_activity">My CardView Activity Example</string>
+  <string name="nav_my_card_view_activity">My CardView Example</string>
+  <string name="nav_simple_preferences_activity">Sample Preferences Example</string>
 
 
   <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -132,4 +133,22 @@
     <item>Lion</item>
     <item>Wolf</item>
   </string-array>
+
+  <string name="app_name_preferences">Preferences</string>
+
+  <string name="title_activity_more_simple_preferences">More preferences</string>
+  <string name="title_activity_super_simple_preferences">Super preferences</string>
+  <string name="activity_name">-Activity name-</string>
+  <string name="change_activities">Change activity</string>
+  <string name="enter_pref_name">Enter preference name</string>
+  <string name="enter_pref_value">>Enter preference value</string>
+  <string name="add_edit_shared_pref">Add/Edit shared preferences</string>
+  <string name="clear_shared_pref_by_name">Delete shared preference by name</string>
+  <string name="add_edit_activity_pref">Add/delete activity preference</string>
+  <string name="clear_act_pref_by_name">Delete preference by name</string>
+  <string name="SHARED_PREFS">*SHARED PREFERENCES*</string>
+  <string name="clear_all_shared_prefs">Delete all shared preferences</string>
+  <string name="show_prefs_here">-Show preferences here-</string>
+  <string name="ACTIVITY_PREFS">*ACTIVITY PREFERENCES*</string>
+  <string name="clear_all_activity_prefs">Delete all activity preferences</string>
 </resources>

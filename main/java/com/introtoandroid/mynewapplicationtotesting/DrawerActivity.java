@@ -108,7 +108,12 @@ public class DrawerActivity extends AppCompatActivity {
                       }else if (id == R.id.nav_my_card_view_activity) {
                         Intent intent = new Intent(context, MyCardViewActivity.class);
                         startActivity(intent);
+                      }else if (id == R.id.nav_simple_preferences_activity) {
+                        Intent intent = new Intent(context, SimplePreferencesActivity.class);
+                        startActivity(intent);
                       }
+
+
                       return false;
                     }
                 }
