@@ -1,117 +1,135 @@
 <resources>
-    <string name="app_name">My Application to Testing</string>
-    <string name="welcoming">Welcome in my testing application!</string>
-    <string name="przycisk">Press bottom if You want to go to next screen!</string>
-    <string name="spin_prompt">Coś</string>
+  <string name="app_name">My Application to Testing</string>
+  <string name="welcoming">Welcome in my testing application!</string>
+  <string name="przycisk">Press bottom if You want to go to next screen!</string>
+  <string name="spin_prompt">Coś</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_pager">PagerActivity</string>
-    <string name="animation_activity">Animation Example</string>
-    <string name="equation_activity">Equation Example</string>
-    <string name="fragments_activity">Fragments Example</string>
-    <string name="fragment_swipe_activity">Fragment Swipe Example</string>
-    <string name="fragment_toolbsr_activity">Fragment Toolbar Example</string>
-    <string name="buttons_activity">Buttons Example</string>
-    <string name="collection_activity">Collection Example</string>
-    <string name="dynamic_fragment_activity">Dynamic Fragment Example</string>
-    <string name="pager_activity">Pager(TabLayout) Example</string>
-    <string name="listview_activity">ListView Example</string>
-    <string name="action_add">Add</string>
-    <string name="action_close">Close</string>
-    <string name="action_help">Help</string>
-    <string name="show_action_bar">Show action bar</string>
-    <string name="hide_action_bar">Hide action bar</string>
-    <string name="nav_menu_example_activity">Menu Example</string>
-    <string name="nav_default_activity">Themes and styles Example</string>
-    <string name="nav_material_design_activity">Material Design Example</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="title_activity_pager">PagerActivity</string>
+  <string name="animation_activity">Animation Example</string>
+  <string name="equation_activity">Equation Example</string>
+  <string name="fragments_activity">Fragments Example</string>
+  <string name="fragment_swipe_activity">Fragment Swipe Example</string>
+  <string name="fragment_toolbsr_activity">Fragment Toolbar Example</string>
+  <string name="buttons_activity">Buttons Example</string>
+  <string name="collection_activity">Collection Example</string>
+  <string name="dynamic_fragment_activity">Dynamic Fragment Example</string>
+  <string name="pager_activity">Pager(TabLayout) Example</string>
+  <string name="listview_activity">ListView Example</string>
+  <string name="action_add">Add</string>
+  <string name="action_close">Close</string>
+  <string name="action_help">Help</string>
+  <string name="show_action_bar">Show action bar</string>
+  <string name="hide_action_bar">Hide action bar</string>
+  <string name="nav_menu_example_activity">Menu Example</string>
+  <string name="nav_default_activity">Themes and styles Example</string>
+  <string name="nav_material_design_activity">Material Design Example</string>
+  <string name="nav_my_card_view_activity">My CardView Activity Example</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="refresh">Refresh</string>
-    <string name="settings">Settings</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <!-- Strings to application with styles and themes -->
-    <string name="app_styles_and_themes_default_name">Activity without styles and themes</string>
-    <string name="app_styles_and_themes_bright_name">Activity with bright styles and themes</string>
-    <string name="app_styles_and_themes_dark_name">Activity with dark styles and themes</string>
-    <string name="text_view_heading">This is main window with information</string>
-    <string name="edit_text_heading">This is main window with input text by user</string>
-    <string name="primary_text_view">Primary textView example</string>
-    <string name="second_text_view">Second textView example</string>
-    <string name="editText">EditText example</string>
-    <string name="action_bright">Bright theme</string>
-    <string name="action_dark">Dark theme</string>
-    <string name="map">Map</string>
-    <string name="email">E-mail</string>
-    <string name="info">Information</string>
-    <string name="fab">Add</string>
-    <string name="hint">Hint</string>
+  <string name="action_settings">Settings</string>
+  <string name="refresh">Refresh</string>
+  <string name="settings">Settings</string>
 
-    <item name="visible" type="id"/>
-    <item name="masked" type="id"/>
+  <!-- Strings to application with styles and themes -->
+  <string name="app_styles_and_themes_default_name">Activity without styles and themes</string>
+  <string name="app_styles_and_themes_bright_name">Activity with bright styles and themes</string>
+  <string name="app_styles_and_themes_dark_name">Activity with dark styles and themes</string>
+  <string name="text_view_heading">This is main window with information</string>
+  <string name="edit_text_heading">This is main window with input text by user</string>
+  <string name="primary_text_view">Primary textView example</string>
+  <string name="second_text_view">Second textView example</string>
+  <string name="editText">EditText example</string>
+  <string name="action_bright">Bright theme</string>
+  <string name="action_dark">Dark theme</string>
+  <string name="map">Map</string>
+  <string name="email">E-mail</string>
+  <string name="info">Information</string>
+  <string name="fab">Add</string>
+  <string name="hint">Hint</string>
 
-    <string name="app_name_material">Material Design</string>
-    <string name="add_button">Dodaj</string>
-    <string name="update_button">Zmień</string>
-    <string name="delete_button">Usuń</string>
-    <string name="fab2">Dodaj przyjaciela</string>
-    <string name="title_activity_transition_edit">Edycja kontaktu</string>
-    <string name="title_activity_transition_add">Dodawanie kontaktu</string>
+  <item name="visible" type="id"/>
+  <item name="masked" type="id"/>
 
-    <string-array name="names_array">
-        <item>Michał</item>
-        <item>Janka</item>
-        <item>Krzysiek</item>
-        <item>Anna</item>
-        <item>Janek</item>
-        <item>Marcelina</item>
-        <item>Dawid</item>
-        <item>Michasia</item>
-        <item>Jurek</item>
-        <item>Katarzyna</item>
-        <item>Joachim</item>
-        <item>Liza</item>
-        <item>Robert</item>
-        <item>Angela</item>
-        <item>Bartek</item>
-        <item>Hieronim</item>
-        <item>Wilhelm</item>
-        <item>Stefa</item>
-        <item>Maciek</item>
-        <item>Nikola</item>
-        <item>Jasiek</item>
-        <item>Joanna</item>
-        <item>Daniel</item>
-        <item>Ela</item>
-        <item>Krystian</item>
-        <item>Rebeka</item>
-        <item>Eryk</item>
-        <item>Krystyna</item>
-        <item>Jakub</item>
-        <item>Maria</item>
-        <item>Ryszard</item>
-        <item>Krystyna</item>
-        <item>Stefania</item>
-        <item>Amanda</item>
-        <item>Marek</item>
-        <item>Julia</item>
-        <item>Tomasz</item>
-        <item>Laura</item>
-        <item>Tymon</item>
-        <item>Sylwia</item>
-        <item>Antek</item>
-        <item>Kornelia</item>
-        <item>Karol</item>
-        <item>Tomek</item>
-        <item>Ireneusz</item>
-        <item>Witold</item>
-        <item>Roman</item>
-        <item>Bartek</item>
-        <item>Darek</item>
-        <item>Danuta</item>
-    </string-array>
+  <string name="app_name_material">Material Design</string>
+  <string name="add_button">Add</string>
+  <string name="update_button">Change</string>
+  <string name="delete_button">Delete</string>
+  <string name="fab2">Add friend</string>
+  <string name="title_activity_transition_edit">Edycja kontaktu</string>
+  <string name="title_activity_transition_add">Dodawanie kontaktu</string>
 
+  <string name="title_activity_my_cardview">My cardview</string>
+  <string name="title_activity_my_cardview_add">My cardview add</string>
+  <string name="title_activity_my_cardview_edit">My cardview edit</string>
+
+  <string-array name="names_array">
+    <item>Michał</item>
+    <item>Janka</item>
+    <item>Krzysiek</item>
+    <item>Anna</item>
+    <item>Janek</item>
+    <item>Marcelina</item>
+    <item>Dawid</item>
+    <item>Michasia</item>
+    <item>Jurek</item>
+    <item>Katarzyna</item>
+    <item>Joachim</item>
+    <item>Liza</item>
+    <item>Robert</item>
+    <item>Angela</item>
+    <item>Bartek</item>
+    <item>Hieronim</item>
+    <item>Wilhelm</item>
+    <item>Stefa</item>
+    <item>Maciek</item>
+    <item>Nikola</item>
+    <item>Jasiek</item>
+    <item>Joanna</item>
+    <item>Daniel</item>
+    <item>Ela</item>
+    <item>Krystian</item>
+    <item>Rebeka</item>
+    <item>Eryk</item>
+    <item>Krystyna</item>
+    <item>Jakub</item>
+    <item>Maria</item>
+    <item>Ryszard</item>
+    <item>Krystyna</item>
+    <item>Stefania</item>
+    <item>Amanda</item>
+    <item>Marek</item>
+    <item>Julia</item>
+    <item>Tomasz</item>
+    <item>Laura</item>
+    <item>Tymon</item>
+    <item>Sylwia</item>
+    <item>Antek</item>
+    <item>Kornelia</item>
+    <item>Karol</item>
+    <item>Tomek</item>
+    <item>Ireneusz</item>
+    <item>Witold</item>
+    <item>Roman</item>
+    <item>Bartek</item>
+    <item>Darek</item>
+    <item>Danuta</item>
+  </string-array>
+
+  <string-array name="animals_array">
+    <item>Cat</item>
+    <item>Dog</item>
+    <item>Ant</item>
+    <item>Horse</item>
+    <item>Parrot</item>
+    <item>Monkey</item>
+    <item>Elephant</item>
+    <item>Tiger</item>
+    <item>Lion</item>
+    <item>Wolf</item>
+  </string-array>
 </resources>

@@ -78,28 +78,53 @@
         android:value=".DefaultActivity"/>
     </activity>
     <activity
-      android:name=".SampleMaterialActivity"
+      android:configChanges="orientation|screenSize"
       android:label="@string/app_name_material"
-      android:theme="@style/AppThemeMaterial"
-      android:configChanges="orientation|screenSize">
+      android:name=".SampleMaterialActivity"
+      android:theme="@style/AppThemeMaterial">
     </activity>
     <activity
-      android:name=".TransitionAddActivity"
+      android:configChanges="orientation|screenSize"
       android:label="@string/title_activity_transition_add"
-      android:configChanges="orientation|screenSize"
-      android:parentActivityName=".SampleMaterialActivity">
+      android:name=".TransitionAddActivity"
+      android:parentActivityName=".SampleMaterialActivity"
+      android:theme="@style/AppThemeMaterial">
       <meta-data
         android:name="android.support.PARENT_ACTIVITY"
         android:value=".SampleMaterialActivity"/>
     </activity>
     <activity
-      android:name=".TransitionEditActivity"
-      android:label="@string/title_activity_transition_edit"
       android:configChanges="orientation|screenSize"
-      android:parentActivityName=".SampleMaterialActivity">
+      android:label="@string/title_activity_transition_edit"
+      android:name=".TransitionEditActivity"
+      android:parentActivityName=".SampleMaterialActivity"
+      android:theme="@style/AppThemeMaterial">
       <meta-data
         android:name="android.support.PARENT_ACTIVITY"
         android:value=".SampleMaterialActivity"/>
+    </activity>
+    <activity android:name=".MyCardViewActivity"
+      android:configChanges="orientation|screenSize"
+      android:label="@string/title_activity_my_cardview"
+      android:theme="@style/AppThemeMaterial">
+    </activity>
+    <activity android:name=".MyCardViewAddActivity"
+      android:configChanges="orientation|screenSize"
+      android:label="@string/title_activity_my_cardview"
+      android:theme="@style/AppThemeMaterial"
+      android:parentActivityName=".MyCardViewActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".MyCardViewActivity"/>
+    </activity>
+    <activity android:name=".MyCardViewEditActivity"
+      android:configChanges="orientation|screenSize"
+      android:label="@string/title_activity_my_cardview"
+      android:theme="@style/AppThemeMaterial"
+      android:parentActivityName=".MyCardViewActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".MyCardViewActivity"/>>
     </activity>
   </application>
 

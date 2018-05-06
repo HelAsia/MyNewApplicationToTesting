@@ -67,6 +67,7 @@ public class TransitionEditActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(text)) {
           Toast.makeText(getApplicationContext(), "Podaj prawidłowe imię", Toast.LENGTH_SHORT).show();
         } else {
+
           intent.putExtra(SampleMaterialActivity.EXTRA_UPDATE, true);
           intent.putExtra(SampleMaterialActivity.EXTRA_NAME, String.valueOf(nameEditText.getText()));
           intent.putExtra(SampleMaterialActivity.EXTRA_INITIAL, String.valueOf(nameEditText.getText().charAt(0)));

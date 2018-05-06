@@ -49,12 +49,14 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
     viewHolder.itemView.clearAnimation();
   }
 
+  @RequiresApi(api = VERSION_CODES.LOLLIPOP)
   @Override
   public void onViewAttachedToWindow(ViewHolder viewHolder) {
     super.onViewAttachedToWindow(viewHolder);
     animateCircularReveal(viewHolder.itemView);
   }
 
+  @RequiresApi(api = VERSION_CODES.LOLLIPOP)
   public void animateCircularReveal(View view) {
     int centerX = 0;
     int centerY = 0;
@@ -65,6 +67,7 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
     animation.start();
   }
 
+  @RequiresApi(api = VERSION_CODES.LOLLIPOP)
   public void animateCircularDelete(final View view, final int list_position) {
     int centerX = view.getWidth();
     int centerY = view.getHeight();
@@ -104,6 +107,7 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
     notifyItemChanged(list_position);
   }
 
+  @RequiresApi(api = VERSION_CODES.LOLLIPOP)
   public void deleteCard(View view, int list_position) {
     animateCircularDelete(view, list_position);
   }
@@ -141,6 +145,7 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
       deleteButton = (Button) v.findViewById(R.id.delete_button);
 
       deleteButton.setOnClickListener(new View.OnClickListener() {
+        @RequiresApi(api = VERSION_CODES.LOLLIPOP)
         @Override
         public void onClick(View v) {
           animateCircularDelete(itemView, getAdapterPosition());
