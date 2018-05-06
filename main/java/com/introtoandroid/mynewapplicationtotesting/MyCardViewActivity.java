@@ -17,20 +17,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 import java.util.ArrayList;
 
 public class MyCardViewActivity extends AppCompatActivity {
   private static final String DEBUG_TAG = "MyCardViewActivity";
-
-  public static final String EXTRA_UPDATE = "update";
-  public static final String EXTRA_DELETE = "delete";
-  public static final String EXTRA_ANIMAL = "animal";
-  public static final String EXTRA_PHOTO = "photo";
-
-  public static final String TRANSITION_FAB = "my_fab_transition";
-  public static final String TRANSITION_INITIAL = "initial_transition";
-  public static final String TRANSITION_ANIMAL = "animal_transition";
-  public static final String TRANSITION_DELETE_BUTTON = "delete_button_transition";
 
   private RecyclerView recyclerView;
   private MyCardViewAdapter adapter;
@@ -60,45 +51,12 @@ public class MyCardViewActivity extends AppCompatActivity {
       @RequiresApi(api = VERSION_CODES.JELLY_BEAN)
       @Override
       public void onClick(View v) {
-        Pair<View,String> pair = Pair.create(v.findViewById(R.id.my_fab), TRANSITION_FAB);
-
-        ActivityOptionsCompat options;
-        Activity act = MyCardViewActivity.this;
-        options = ActivityOptionsCompat.makeSceneTransitionAnimation(act, pair);
-
-        Intent transitionIntent = new Intent(act, MyCardViewAddActivity.class);
-        act.startActivityForResult(transitionIntent, adapter.getItemCount(), options.toBundle());
+        Toast.makeText(MyCardViewActivity.this,
+            "You will add something to this list in the future. ", Toast.LENGTH_SHORT).show();
       }
     });
   }
 
-  @RequiresApi(api = VERSION_CODES.LOLLIPOP)
-  @Override
-  protected void onActivityResult (int requestCode, int resultCode, Intent data) {
-    super.onActivityResult(requestCode, resultCode, data);
-
-    Log.d(DEBUG_TAG, "requestCode has value " + requestCode);
-
-    if (requestCode == adapter.getItemCount()) {
-      if (resultCode == RESULT_OK) {
-        String animal = data.getStringExtra(EXTRA_ANIMAL);
-        byte[] b = data.getByteArrayExtra(EXTRA_PHOTO);
-        Bitmap photo = BitmapFactory.decodeByteArray(b, 0 , b.length);
-        adapter.addCard(animal, photo);
-      }
-    }else {
-      if (resultCode == RESULT_OK) {
-        RecyclerView.ViewHolder viewHolder = recyclerView.findViewHolderForAdapterPosition(requestCode);
-        if (data.getExtras().getBoolean(EXTRA_DELETE, false)) {
-          adapter.deleteCard(viewHolder.itemView, requestCode);
-        }else if (data.getExtras().getBoolean(EXTRA_UPDATE)) {
-          String animal = data.getStringExtra(EXTRA_ANIMAL);
-          viewHolder.itemView.setVisibility(View.INVISIBLE);
-          adapter.updateCard(animal, requestCode);
-        }
-      }
-    }
-  }
   public void doSmoothScroll(int position) {
     recyclerView.smoothScrollToPosition(position);
   }

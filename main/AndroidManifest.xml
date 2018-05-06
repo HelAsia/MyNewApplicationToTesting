@@ -108,24 +108,6 @@
       android:label="@string/title_activity_my_cardview"
       android:theme="@style/AppThemeMaterial">
     </activity>
-    <activity android:name=".MyCardViewAddActivity"
-      android:configChanges="orientation|screenSize"
-      android:label="@string/title_activity_my_cardview"
-      android:theme="@style/AppThemeMaterial"
-      android:parentActivityName=".MyCardViewActivity">
-      <meta-data
-        android:name="android.support.PARENT_ACTIVITY"
-        android:value=".MyCardViewActivity"/>
-    </activity>
-    <activity android:name=".MyCardViewEditActivity"
-      android:configChanges="orientation|screenSize"
-      android:label="@string/title_activity_my_cardview"
-      android:theme="@style/AppThemeMaterial"
-      android:parentActivityName=".MyCardViewActivity">
-      <meta-data
-        android:name="android.support.PARENT_ACTIVITY"
-        android:value=".MyCardViewActivity"/>>
-    </activity>
   </application>
 
 </manifest>

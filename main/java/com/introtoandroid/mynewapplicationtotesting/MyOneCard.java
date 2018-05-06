@@ -1,8 +1,6 @@
 package com.introtoandroid.mynewapplicationtotesting;
 
-import android.content.res.TypedArray;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 
 /**
  * Created by Asia on 2018-05-05.
