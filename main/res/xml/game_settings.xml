@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="Sounds and cheats">
+    <CheckBoxPreference
+      android:key="bSoundOn"
+      android:title="Turn on sounds"
+      android:summary="Turn on or turn off sounds in game"
+      android:defaultValue="true"/>
+    <CheckBoxPreference
+      android:key="bAllowCheats"
+      android:title="Turn on cheats"
+      android:summary="Turn on possibility play not fair"
+      android:defaultValue="false"/>
+  </PreferenceCategory>
+</PreferenceScreen>

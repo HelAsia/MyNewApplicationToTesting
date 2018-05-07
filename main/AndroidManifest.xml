@@ -121,8 +121,13 @@
       android:theme="@style/AppThemePreferences">
     </activity>
     <activity
-      android:name=".SimpleUserPrefsActivity"
       android:label="@string/app_name_user_preferences"
+      android:name=".SimpleUserPrefsActivity"
+      android:theme="@style/AppThemePreferences">
+    </activity>
+    <activity
+      android:label="@string/app_name_header_preferences"
+      android:name=".UserPrefsHeadersActivity"
       android:theme="@style/AppThemePreferences">
     </activity>
   </application>

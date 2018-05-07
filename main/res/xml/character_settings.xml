@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="Character's gender and race">
+    <ListPreference
+      android:key="gender"
+      android:title="Character's gender"
+      android:summary="This is gender of Your game's character"
+      android:entries="@array/char_gender_types"
+      android:entryValues="@array/char_genders"
+      android:dialogTitle="Choose gender of Your game's character: "/>
+    <ListPreference
+      android:key="race"
+      android:title="Character's race"
+      android:summary="This is race of Your game's character"
+      android:entries="@array/char_race_types"
+      android:entryValues="@array/char_races"
+      android:dialogTitle="Choose race of Your game's character"/>
+  </PreferenceCategory>
+
+</PreferenceScreen>
