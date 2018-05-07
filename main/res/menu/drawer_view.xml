@@ -48,6 +48,9 @@
         <item
           android:id="@+id/nav_simple_preferences_activity"
           android:title="@string/nav_simple_preferences_activity" />
+        <item
+          android:id="@+id/nav_simple_user_preferences_activity"
+          android:title="@string/nav_simple_user_preferences_activity" />
 
 
     </group>

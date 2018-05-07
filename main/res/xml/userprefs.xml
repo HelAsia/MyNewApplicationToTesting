@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="User name and e-mail">
+    <EditTextPreference
+      android:key="username"
+      android:title="User name"
+      android:summary="This is Your user name in service ACME"
+      android:defaultValue="username01"
+      android:dialogTitle="Input user name in service ACME: "/>
+    <EditTextPreference
+      android:key="email"
+      android:title="Email configuration"
+      android:summary="Input You email address"
+      android:defaultValue="your@email.com"/>
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="Sounds and cheats">
+    <CheckBoxPreference
+      android:key="bSoundOn"
+      android:title="Turn on sounds"
+      android:summary="Turn on or turn off sounds in game"
+      android:defaultValue="true"/>
+    <CheckBoxPreference
+      android:key="bAllowCheats"
+      android:title="Turn on cheats"
+      android:summary="Turn on possibility play not fair"
+      android:defaultValue="false"/>
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="Character's gender and race">
+    <ListPreference
+      android:key="gender"
+      android:title="Character's gender"
+      android:summary="This is gender of Your game's character"
+      android:entries="@array/char_gender_types"
+      android:entryValues="@array/char_genders"
+      android:dialogTitle="Choose gender of Your game's character: "/>
+    <ListPreference
+      android:key="race"
+      android:title="Character's race"
+      android:summary="This is race of Your game's character"
+      android:entries="@array/char_race_types"
+      android:entryValues="@array/char_races"
+      android:dialogTitle="Choose race of Your game's character"/>
+  </PreferenceCategory>
+</PreferenceScreen>

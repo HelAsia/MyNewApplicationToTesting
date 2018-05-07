@@ -27,6 +27,8 @@
   <string name="nav_material_design_activity">Material Design Example</string>
   <string name="nav_my_card_view_activity">My CardView Example</string>
   <string name="nav_simple_preferences_activity">Sample Preferences Example</string>
+  <string name="nav_simple_user_preferences_activity">Sample User Preferences Example</string>
+
 
 
   <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -151,4 +153,29 @@
   <string name="show_prefs_here">-Show preferences here-</string>
   <string name="ACTIVITY_PREFS">*ACTIVITY PREFERENCES*</string>
   <string name="clear_all_activity_prefs">Delete all activity preferences</string>
+
+  <string name="app_name_user_preferences">User preferences</string>
+
+  <string-array name="char_gender_types">
+    <item>Man</item>
+    <item>Women</item>
+    <item>Unknown</item>
+  </string-array>
+  <string-array name="char_genders">
+    <item>Male</item>
+    <item>Female</item>
+    <item>Unknown</item>
+  </string-array>
+  <string-array name="char_race_types">
+    <item>Elf</item>
+    <item>Krasnolud</item>
+    <item>Driada</item>
+    <item>Troll</item>
+  </string-array>
+  <string-array name="char_races">
+    <item>elf</item>
+    <item>dwarf</item>
+    <item>dryad</item>
+    <item>troll</item>
+  </string-array>
 </resources>

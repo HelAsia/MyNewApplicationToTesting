@@ -109,14 +109,21 @@
       android:name=".MyCardViewActivity"
       android:theme="@style/AppThemeMaterial">
     </activity>
-    <activity android:name=".SimplePreferencesActivity"
+    <activity
       android:label="@string/app_name_preferences"
+      android:name=".SimplePreferencesActivity"
       android:theme="@style/AppThemePreferences">
     </activity>
-    <activity android:name=".MoreSimplePreferencesActivity"
+    <activity
       android:label="@string/title_activity_more_simple_preferences"
-      android:theme="@style/AppThemePreferences"
-      android:parentActivityName=".SimplePreferencesActivity">
+      android:name=".MoreSimplePreferencesActivity"
+      android:parentActivityName=".SimplePreferencesActivity"
+      android:theme="@style/AppThemePreferences">
+    </activity>
+    <activity
+      android:name=".SimpleUserPrefsActivity"
+      android:label="@string/app_name_user_preferences"
+      android:theme="@style/AppThemePreferences">
     </activity>
   </application>
 
