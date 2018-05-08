@@ -120,6 +120,10 @@ public class DrawerActivity extends AppCompatActivity {
                       }else if (id == R.id.nav_simple_files_activity) {
                         Intent intent = new Intent(context, SimpleFilesActivity.class);
                         startActivity(intent);
+                      }else if (id == R.id.nav_advanced_files_activity) {
+                        Intent intent = new Intent(context,
+                            FileStreamOfConsciousnessActivity.class);
+                        startActivity(intent);
                       }
                       return false;
                     }

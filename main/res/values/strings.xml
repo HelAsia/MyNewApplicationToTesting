@@ -30,6 +30,7 @@
   <string name="nav_simple_user_preferences_activity">Sample User Preferences Example</string>
   <string name="nav_simple_header_preferences_activity">Sample Headers Preferences Example</string>
   <string name="nav_simple_files_activity">Sample files Example</string>
+  <string name="nav_advanced_files_activity">Advanced files Example</string>
 
   <string name="navigation_drawer_open">Open navigation drawer</string>
   <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -183,4 +184,18 @@
   <string name="app_name_files">Simple file operations</string>
 
   <string name="notice">This application has no user interface! If You want to see how it works, you have to look into the diary!</string>
+
+  <string name="app_name_file2">Stream to the file</string>
+
+  <string name="this_is_the_log_file">"Conversation has been registered and displayed below. "</string>
+  <string name="go_chat">Go to conversation</string>
+  <string name="show_log_here">-Show log here</string>
+  <string name="delete_log">Delete log</string>
+  <string name="description">"You can talk with yourself and everything will be write to file"</string>
+  <string name="chat_text_here_then_hit_send">Input text here and press SEND</string>
+  <string name="send">Send</string>
+  <string name="review_log_file">Review log file</string>
+  <string name="title_activity_view_log">Log view</string>
+
+  <string name="hello_world">Witaj, świecie!</string>
 </resources>

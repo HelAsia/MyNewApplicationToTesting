@@ -135,6 +135,21 @@
       android:name=".SimpleFilesActivity"
       android:theme="@style/AppThemePreferences">
     </activity>
+
+    <activity
+      android:name=".FileStreamOfConsciousnessActivity"
+      android:label="@string/app_name_files"
+      android:theme="@style/AppTheme.BaseFile">
+    </activity>
+    <activity
+      android:name=".ViewLogActivity"
+      android:label="@string/title_activity_view_log"
+      android:parentActivityName=".FileStreamOfConsciousnessActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".FileStreamOfConsciousnessActivity"/>
+    </activity>
+
   </application>
 
 </manifest>

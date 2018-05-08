@@ -47,6 +47,15 @@
     <item name="android:textColor">@color/theme_dark_toolbar_overflow_text_color</item>
   </style>
 
+  <style name="AppThemeFile" parent="AppTheme.BaseFile">
+    <item name="colorPrimary">@color/primary_files</item>
+    <item name="colorPrimaryDark">@color/primary_dark_files</item>
+    <item name="colorAccent">@color/accent_files</item>
+  </style>
+
+  <style name="AppTheme.BaseFile" parent="Theme.AppCompat.Light.NoActionBar">
+  </style>
+
 
 
 </resources>

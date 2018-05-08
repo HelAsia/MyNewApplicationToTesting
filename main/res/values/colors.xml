@@ -123,4 +123,10 @@
     <item>@color/pink</item>
   </integer-array>
 
+  <color name="text_color_files">#fff</color>
+  <color name="primary_files">#999999</color>
+  <color name="primary_dark_files">#2196F3</color>
+  <color name="accent_files">#BBDEFB</color>
+  <color name="nav_bar_files">#0D47A1</color>
+
 </resources>

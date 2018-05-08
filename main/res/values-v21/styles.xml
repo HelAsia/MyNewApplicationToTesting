@@ -5,5 +5,9 @@
   <item name="elevation">4dp</item>
   </style>
   <style name="AppTheme" parent="android:Theme.Material.Light"/>
+  <style name="AppThemeFile" parent="AppTheme.BaseFile">
+    <item name="android:statusBarColor">@color/primary_dark_files</item>
+    <item name="android:navigationBarColor">@color/nav_bar_files</item>
+  </style>
 
 </resources>
