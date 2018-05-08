@@ -130,6 +130,11 @@
       android:name=".UserPrefsHeadersActivity"
       android:theme="@style/AppThemePreferences">
     </activity>
+    <activity
+      android:label="@string/app_name_files"
+      android:name=".SimpleFilesActivity"
+      android:theme="@style/AppThemePreferences">
+    </activity>
   </application>
 
 </manifest>

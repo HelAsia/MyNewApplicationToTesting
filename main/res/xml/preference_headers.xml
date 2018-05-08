@@ -8,5 +8,5 @@
     android:summary="Configure game settings" />
   <header android:fragment="com.introtoandroid.mynewapplicationtotesting.UserPrefsHeadersActivity$CharacterSettingsFragment"
     android:title="Character settings"
-    android:summary="Configure characte settings" />
+    android:summary="Configure character settings" />
 </preference-headers>
