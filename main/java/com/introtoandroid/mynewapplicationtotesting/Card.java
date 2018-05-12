@@ -8,6 +8,10 @@ public class Card {
   private long id;
   private String name;
   private int color_resource;
+  private int listPosition = 0;
+
+  public Card() {
+  }
 
   public long getId() {
     return id;
@@ -31,5 +35,13 @@ public class Card {
 
   public void setColorResource(int color_resource) {
     this.color_resource = color_resource;
+  }
+
+  public int getListPosition() {
+    return listPosition;
+  }
+
+  public void setListPosition(int listPosition) {
+    this.listPosition = listPosition;
   }
 }

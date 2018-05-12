@@ -2,9 +2,9 @@ package com.introtoandroid.mynewapplicationtotesting;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Build.VERSION_CODES;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -24,12 +24,14 @@ import java.util.ArrayList;
 public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAdapter.ViewHolder> {
   private static final String DEBUG_TAG = "SampleMaterialAdapter";
 
-  public Context context;
-  public ArrayList<Card> cardsList;
+  private Context context;
+  private ArrayList<Card> cardsList;
+  public CardsData cardsData;
 
-  public SampleMaterialAdapter(Context context, ArrayList<Card> cardsList) {
+  public SampleMaterialAdapter(Context context, ArrayList<Card> cardsList, CardsData cardsData) {
     this.context = context;
     this.cardsList = cardsList;
+    this.cardsData = cardsData;
   }
 
   @Override
@@ -79,13 +81,11 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
       @Override
       public void onAnimationEnd(Animator animation) {
         super.onAnimationEnd(animation);
-
-        Log.d(DEBUG_TAG, "SampleMaterialAdapter onAnimationEnd for Edit adapter position " + list_position);
-        Log.d(DEBUG_TAG, "SampleMaterialAdapter onAnimationEnd for Edit cardId " + getItemId(list_position));
-
         view.setVisibility(View.INVISIBLE);
-        cardsList.remove(list_position);
-        notifyItemRemoved(list_position);
+        Card card = new Card();
+        card.setId(getItemId(list_position));
+        card.setListPosition(list_position);
+        new DeleteCardTask().execute(card);
       }
     });
     animation.start();
@@ -95,16 +95,15 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
     Card card = new Card();
     card.setName(name);
     card.setColorResource(color);
-    card.setId(getItemCount());
-    cardsList.add(card);
-    ((SampleMaterialActivity) context).doSmoothScroll(getItemCount());
-    notifyItemInserted(getItemCount());
+    new CreateCardTask().execute(card);
   }
 
   public void updateCard(String name, int list_position) {
-    cardsList.get(list_position).setName(name);
-    Log.d(DEBUG_TAG, "list_position ma wartość " + list_position);
-    notifyItemChanged(list_position);
+    Card card = new Card();
+    card.setName(name);
+    card.setId(getItemId(list_position));
+    card.setListPosition(list_position);
+    new UpdateCardTask().execute(card);
   }
 
   @RequiresApi(api = VERSION_CODES.LOLLIPOP)
@@ -161,14 +160,14 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
           Pair<View, String> p3 = Pair.create((View) deleteButton, SampleMaterialActivity.TRANSITION_DELETE_BUTTON);
 
           ActivityOptionsCompat options;
-          Activity act = (AppCompatActivity) context;
+          AppCompatActivity act = (AppCompatActivity) context;
           options = ActivityOptionsCompat.makeSceneTransitionAnimation(act, p1, p2, p3);
 
           int requestCode = getAdapterPosition();
           String name = cardsList.get(requestCode).getName();
           int color = cardsList.get(requestCode).getColorResource();
 
-          Log.d(DEBUG_TAG, "SampleMaterialAdapter: obsługa kliknięcia elementu na pozycji w adapterze " + requestCode);
+          Log.d(DEBUG_TAG, "SampleMaterialAdapter klinięto w celu edycji, pozycja elementu: " + requestCode);
 
           Intent transitionIntent = new Intent(context, TransitionEditActivity.class);
           transitionIntent.putExtra(SampleMaterialActivity.EXTRA_NAME, name);
@@ -179,6 +178,54 @@ public class SampleMaterialAdapter extends RecyclerView.Adapter<SampleMaterialAd
           ((AppCompatActivity) context).startActivityForResult(transitionIntent, requestCode, options.toBundle());
         }
       });
+    }
+  }
+
+  private class CreateCardTask extends AsyncTask<Card, Void, Card> {
+    @Override
+    protected Card doInBackground(Card... cards) {
+      cardsData.create(cards[0]);
+      cardsList.add(cards[0]);
+      return cards[0];
+    }
+
+    @Override
+    protected void onPostExecute(Card card) {
+      super.onPostExecute(card);
+      ((SampleMaterialActivity) context).doSmoothScroll(getItemCount() - 1);
+      notifyItemInserted(getItemCount());
+      Log.d(DEBUG_TAG, "Utworzono kartę o identyfikatorze " + card.getId() + ", imię: " + card.getName() + ", kolor: " + card.getColorResource());
+    }
+  }
+
+  private class UpdateCardTask extends AsyncTask<Card, Void, Card> {
+    @Override
+    protected Card doInBackground(Card... cards) {
+      cardsData.update(cards[0].getId(), cards[0].getName());
+      cardsList.get(cards[0].getListPosition()).setName(cards[0].getName());
+      return cards[0];
+    }
+
+    @Override
+    protected void onPostExecute(Card card) {
+      super.onPostExecute(card);
+      Log.d(DEBUG_TAG, "list_position ma wartość " + card.getListPosition());
+      notifyItemChanged(card.getListPosition());
+    }
+  }
+
+  private class DeleteCardTask extends AsyncTask<Card, Void, Card> {
+    @Override
+    protected Card doInBackground(Card... cards) {
+      cardsData.delete(cards[0].getId());
+      cardsList.remove(cards[0].getListPosition());
+      return cards[0];
+    }
+
+    @Override
+    protected void onPostExecute(Card card) {
+      super.onPostExecute(card);
+      notifyItemRemoved(card.getListPosition());
     }
   }
 }

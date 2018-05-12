@@ -60,8 +60,8 @@
         <item
           android:id="@+id/nav_advanced_files_activity"
           android:title="@string/nav_advanced_files_activity" />
-
-
-
+        <item
+          android:id="@+id/nav_content_providers_activity"
+          android:title="@string/nav_content_providers_activity" />
     </group>
 </menu>

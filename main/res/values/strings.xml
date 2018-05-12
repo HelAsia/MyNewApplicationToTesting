@@ -31,6 +31,8 @@
   <string name="nav_simple_header_preferences_activity">Sample Headers Preferences Example</string>
   <string name="nav_simple_files_activity">Sample files Example</string>
   <string name="nav_advanced_files_activity">Advanced files Example</string>
+  <string name="nav_content_providers_activity">Content Providers Example</string>
+
 
   <string name="navigation_drawer_open">Open navigation drawer</string>
   <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -59,7 +61,7 @@
   <item name="visible" type="id"/>
   <item name="masked" type="id"/>
 
-  <string name="app_name_material">Material Design</string>
+  <string name="app_name_material">Material Design and Database SQLite</string>
   <string name="add_button">Add</string>
   <string name="update_button">Change</string>
   <string name="delete_button">Delete</string>
@@ -198,4 +200,8 @@
   <string name="title_activity_view_log">Log view</string>
 
   <string name="hello_world">Witaj, świecie!</string>
+
+  <string name="app_name_content_providers">Content Providers</string>
+
+  <string name="logcatOutput">Results is enable in LogCat.</string>
 </resources>
