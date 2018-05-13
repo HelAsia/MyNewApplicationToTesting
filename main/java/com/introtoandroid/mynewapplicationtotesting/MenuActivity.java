@@ -3,7 +3,9 @@ package com.introtoandroid.mynewapplicationtotesting;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build.VERSION_CODES;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +18,7 @@ import android.widget.Toast;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+@RequiresApi(api = VERSION_CODES.JELLY_BEAN)
 public abstract class MenuActivity extends AppCompatActivity
       implements ActivityCompat.OnRequestPermissionsResultCallback {
   private static final String DEBUG_TAG = "MenuActivity";

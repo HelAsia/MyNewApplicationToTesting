@@ -32,6 +32,7 @@
   <string name="nav_simple_files_activity">Sample files Example</string>
   <string name="nav_advanced_files_activity">Advanced files Example</string>
   <string name="nav_content_providers_activity">Content Providers Example</string>
+  <string name="nav_content_providers_image_activity">Image: Content Providers Example</string>
 
 
   <string name="navigation_drawer_open">Open navigation drawer</string>

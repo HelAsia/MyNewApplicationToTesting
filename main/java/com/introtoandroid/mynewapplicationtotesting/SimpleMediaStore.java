@@ -21,7 +21,7 @@ public class SimpleMediaStore extends Activity {
     try {
       String[] requestedColumns = {
           MediaStore.Audio.Media.TITLE,
-          MediaStore.Audio.Media.DURATION
+          MediaStore.Audio.Media.DURATION,
       };
       CursorLoader loader = new CursorLoader(this,
           MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
