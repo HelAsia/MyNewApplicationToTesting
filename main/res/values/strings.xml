@@ -205,4 +205,6 @@
   <string name="app_name_content_providers">Content Providers</string>
 
   <string name="logcatOutput">Results is enable in LogCat.</string>
+
+  <string name="load_picture">Load Picture</string>
 </resources>
