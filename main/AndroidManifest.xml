@@ -4,8 +4,7 @@
 
   <uses-permission android:name="android.permission.READ_CALL_LOG"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
   <application
     android:allowBackup="true"
@@ -161,6 +160,11 @@
     <activity android:name=".SimpleCallLog"/>
     <activity android:name=".SimpleMediaStore"/>
     <activity android:name=".SimpleImageContentProviderActivity">
+    </activity>
+    <activity
+      android:label="@string/app_name_testing"
+      android:name=".PasswordMatcherActivity"
+      android:theme="@style/AppThemeMaterial">
     </activity>
   </application>
 

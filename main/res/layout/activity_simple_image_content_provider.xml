@@ -26,7 +26,7 @@
     android:layout_gravity="center"
     android:layout_weight="0"
     android:onClick="loadImagefromGallery"
-    android:text="@string/load_picture">
+    android:text="Load Picture">
   </Button>
 
 

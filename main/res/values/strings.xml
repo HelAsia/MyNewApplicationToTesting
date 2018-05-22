@@ -207,4 +207,15 @@
   <string name="logcatOutput">Results is enable in LogCat.</string>
 
   <string name="load_picture">Load Picture</string>
+
+  <string name="app_name_testing">Comparing passwords</string>
+  <string name="match_passwords_title">Application Unit tests</string>
+  <string name="password">Password</string>
+  <string name="matching_password">Matching password</string>
+  <string name="match_password_button">Check passwords</string>
+  <string name="passwords_match_notice">Passwords are the same!</string>
+  <string name="passwords_do_not_match_notice">Passwords are not the same!</string>
+  <string name="display_title">Display Title</string>
+  <string name="submit_match_password_button">SubmitMatchPasswordButton</string>
+  <string name="match_password_notice">MatchPasswordNotice</string>
 </resources>
