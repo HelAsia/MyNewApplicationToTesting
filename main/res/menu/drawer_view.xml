@@ -66,6 +66,9 @@
         <item
           android:id="@+id/nav_content_providers_image_activity"
           android:title="@string/nav_content_providers_image_activity" />
+        <item
+          android:id="@+id/nav_simple_fragments_activity"
+          android:title="@string/nav_simple_fragments_activity" />
 
     </group>
 </menu>

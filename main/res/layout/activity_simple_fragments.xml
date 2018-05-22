@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_simple_fragments"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.introtoandroid.mynewapplicationtotesting.SimpleFragmentsActivity">
+
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/tool_bar"/>
+
+  <fragment
+    android:name="com.introtoandroid.mynewapplicationtotesting.VeggieGardenListFragment"
+    android:id="@+id/list"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    tools:layout="@layout/activity_simple_fragments"/>
+
+</LinearLayout>

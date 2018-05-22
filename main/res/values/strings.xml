@@ -33,6 +33,7 @@
   <string name="nav_advanced_files_activity">Advanced files Example</string>
   <string name="nav_content_providers_activity">Content Providers Example</string>
   <string name="nav_content_providers_image_activity">Image: Content Providers Example</string>
+  <string name="nav_simple_fragments_activity">Simple Fragment Example</string>
 
 
   <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -218,4 +219,7 @@
   <string name="display_title">Display Title</string>
   <string name="submit_match_password_button">SubmitMatchPasswordButton</string>
   <string name="match_password_notice">MatchPasswordNotice</string>
+
+  <string name="app_name_fragment">Fragments</string>
+  <string name="title_activity_veggie_garden">Andrew veggie garden</string>
 </resources>

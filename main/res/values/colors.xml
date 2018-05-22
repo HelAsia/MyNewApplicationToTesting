@@ -129,4 +129,9 @@
   <color name="accent_files">#BBDEFB</color>
   <color name="nav_bar_files">#0D47A1</color>
 
+  <color name="primary">#4db6ac</color>
+  <color name="primary_dark">#009688</color>
+  <color name="accent">#b2dfdb</color>
+  <color name="nav_bar">#00796b</color>
+
 </resources>

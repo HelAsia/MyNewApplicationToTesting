@@ -130,6 +130,9 @@ public class DrawerActivity extends AppCompatActivity {
                       }else if (id == R.id.nav_content_providers_image_activity) {
                         Intent intent = new Intent(context, SimpleImageContentProviderActivity.class);
                         startActivity(intent);
+                      }else if (id == R.id.nav_simple_fragments_activity) {
+                        Intent intent = new Intent(context, SimpleFragmentsActivity.class);
+                        startActivity(intent);
                       }
 
                       return false;
